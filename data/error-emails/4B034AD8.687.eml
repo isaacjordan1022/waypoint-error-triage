@@ -1,0 +1,47 @@
+Received: from wpa-mobile-api-b21e8.wpacorp.local ([10.20.4.131])
+ by gwia.wpacorp.local with ESMTP id 09157A82A517; Mon, 19 Oct 2026 00:30:34 -0500
+Message-ID: <6167AD6C0200602100011172@gwia.wpacorp.example>
+Date: Mon, 19 Oct 2026 05:30:30 +0000
+From: "WPA ErrorMailer" <errormailer@wpacorp.example>
+To: "Web Dev Errors" <webdev-errors@wpacorp.example>
+Subject: Production | Error: TaskCanceledException in Waypoint.Mobile.Api
+X-Mailer: GroupWise Internet Agent 18.5.0
+X-Wpa-Host: wpa-mobile-api-b21e8
+X-Wpa-Environment: Production
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+An unhandled exception was logged by Waypoint.Mobile.Api.
+
+Environment   : Production
+Server        : wpa-mobile-api-b21e8
+Time          : 2026-10-19T05:30:30.584Z
+Release       : 2.7.0+f202086
+TraceId       : 00-cf28c7dc974062f4ddb449ca85f49011-40c129c0a20a864f-00
+CorrelationId : f450d66c-6690-417c-9d52-9926e09e0c95
+User          : blindqvist@laurelvalleyacres.example
+Account       : 13199 Laurel Valley Acres
+Request       : GET /api/v2/samples/37184/status
+
+Exception:
+System.Threading.Tasks.TaskCanceledException: The request was canceled due =
+to the configured HttpClient.Timeout of 30 seconds elapsing.
+ ---> System.TimeoutException: The operation was canceled.
+ ---> System.Threading.Tasks.TaskCanceledException: The operation was cance=
+led.
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, =
+Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemet=
+ryStarted, HttpResponseMessage response, CancellationTokenSource cts, Cance=
+llationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at Waypoint.Mobile.Api.Clients.LimsGatewayClient.GetSampleStatusAsync(St=
+ring labNumber, CancellationToken ct) in /src/Waypoint.Mobile.Api/Clients/L=
+imsGatewayClient.cs:line 88
+   at Waypoint.Mobile.Api.Controllers.SamplesController.GetStatusAsync(Stri=
+ng labNumber, CancellationToken ct) in /src/Waypoint.Mobile.Api/Controllers=
+/SamplesController.cs:line 29
+
+--=20
+Sent automatically by WPA ErrorMailer 3.2. Do not reply to this message.

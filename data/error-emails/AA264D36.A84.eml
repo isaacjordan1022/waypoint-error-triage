@@ -1,0 +1,41 @@
+Received: from WPA-WEB01.wpacorp.local ([10.20.4.218])
+ by gwia.wpacorp.local with ESMTP id 2FBC5CC4068F; Wed, 21 Oct 2026 09:30:10 -0500
+Message-ID: <30D3CC200200145800043C4D@gwia.wpacorp.example>
+Date: Wed, 21 Oct 2026 09:30:08 CDT
+From: "WPA ErrorMailer" <errormailer@wpacorp.example>
+To: "Web Dev Errors" <webdev-errors@wpacorp.example>
+Subject: Production | Error: JSDisconnectedException in Waypoint.Portal
+X-Mailer: GroupWise Internet Agent 18.5.0
+X-Wpa-Host: WPA-WEB01
+X-Wpa-Environment: Production
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+An unhandled exception was logged by Waypoint.Portal.
+
+Environment   : Production
+Server        : WPA-WEB01
+Time          : 10/21/2026 9:30:08 AM
+Release       : 4.11.3+dd24a2e
+Circuit       : TbclW-LnhV_86oJRU1ZZNw
+RequestId     : 0HN7B69QHL93Q:00000014
+CorrelationId : 9e3d59f0-ef57-40bb-9500-2f8daf373150
+User          : rlindqvist@whitlocksfeedandseed.example
+Account       : 21099 Whitlock's Feed & Seed
+Page          : /samples/track
+
+Exception:
+Microsoft.JSInterop.JSDisconnectedException: JavaScript interop calls canno=
+t be issued at this time. This is because the circuit has disconnected and =
+is being disposed.
+   at Microsoft.AspNetCore.Components.Server.Circuits.RemoteJSRuntime.Begin=
+InvokeJS(Int64 asyncHandle, String identifier, String argsJson, JSCallResul=
+tType resultType, Int64 targetInstanceId)
+   at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanc=
+eId, String identifier, CancellationToken cancellationToken, Object[] args)
+   at Waypoint.Portal.Components.Layout.MainLayout.DisposeAsync() in D:\a\1=
+\s\src\Waypoint.Portal\Components\Layout\MainLayout.razor:line 112
+
+--=20
+Sent automatically by WPA ErrorMailer 3.2. Do not reply to this message.

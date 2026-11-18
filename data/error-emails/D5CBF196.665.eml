@@ -1,0 +1,93 @@
+Received: from WPA-WEB02.wpacorp.local ([10.20.6.115])
+ by gwia.wpacorp.local with ESMTP id 2197971FFAC8; Sat, 07 Nov 2026 02:28:41 -0600
+Message-ID: <D0A9886F02004365000DFFD6@gwia.wpacorp.example>
+Date: Sat, 07 Nov 2026 02:28:39 -0600 (CST)
+From: "WPA ErrorMailer" <errormailer@wpacorp.example>
+To: "Web Dev Errors" <webdev-errors@wpacorp.example>
+Subject: Production | Error: NotFoundException in Waypoint.Portal
+X-Mailer: GroupWise Internet Agent 18.5.0
+X-Wpa-Host: WPA-WEB02
+X-Wpa-Environment: Production
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=_GW53312F8E527335CB"
+
+This is a multi-part message in MIME format.
+
+--=_GW53312F8E527335CB
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+An unhandled exception was logged by Waypoint.Portal.
+
+Environment   : Production
+Server        : WPA-WEB02
+Time          : 11/7/2026 2:28:39 AM
+Release       : 4.12.1+75aa65f
+Circuit       : jGXBPfF4cbr3WX8grWeG9g
+RequestId     : 0HNO1450T6IBD:0000001A
+CorrelationId : f9237b28-c7ab-407a-be96-afa906921ebf
+User          : (anonymous)
+Request       : GET /.env
+Remote IP     : 198.51.100.23
+User-Agent    : curl/8.4.0
+
+Exception:
+Waypoint.Portal.Infrastructure.NotFoundException: No endpoint matched GET /=
+.env
+   at Waypoint.Portal.Infrastructure.StrictRoutingMiddleware.InvokeAsync(Ht=
+tpContext context) in D:\a\1\s\src\Waypoint.Portal\Infrastructure\StrictRou=
+tingMiddleware.cs:line 44
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClas=
+s2_0.<UseMiddleware>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.Invok=
+e(HttpContext context)
+
+--=20
+Sent automatically by WPA ErrorMailer 3.2. Do not reply to this message.
+
+--=_GW53312F8E527335CB
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><meta charset=3D"utf-8"></head><body style=3D"font-family:Helve=
+tica,Arial,sans-serif">
+<h3 style=3D"color:#CB333B;margin:0 0 8px">Production | Error in Waypoint.P=
+ortal</h3>
+<table style=3D"font-size:13px">
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Environment</td><td>=
+Production</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Server</td><td>WPA-W=
+EB02</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Time</td><td>11/7/20=
+26 2:28:39 AM</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Release</td><td>4.12=
+.1+75aa65f</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Circuit</td><td>jGXB=
+PfF4cbr3WX8grWeG9g</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">RequestId</td><td>0H=
+NO1450T6IBD:0000001A</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">CorrelationId</td><t=
+d>f9237b28-c7ab-407a-be96-afa906921ebf</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">User</td><td>(anonym=
+ous)</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Request</td><td>GET =
+/.env</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Remote IP</td><td>19=
+8.51.100.23</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">User-Agent</td><td>c=
+url/8.4.0</td></tr>
+</table>
+<pre style=3D"font-size:12px;background:#F7F7F7;padding:8px">Waypoint.Porta=
+l.Infrastructure.NotFoundException: No endpoint matched GET /.env
+   at Waypoint.Portal.Infrastructure.StrictRoutingMiddleware.InvokeAsync(Ht=
+tpContext context) in D:\a\1\s\src\Waypoint.Portal\Infrastructure\StrictRou=
+tingMiddleware.cs:line 44
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.&lt;&gt;c__Displ=
+ayClass2_0.&lt;UseMiddleware&gt;b__0(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.Invok=
+e(HttpContext context)</pre>
+<p style=3D"color:#808080;font-size:11px">Sent automatically by WPA ErrorMa=
+iler 3.2.</p>
+</body></html>
+
+--=_GW53312F8E527335CB--

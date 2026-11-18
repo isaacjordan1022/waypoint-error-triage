@@ -1,0 +1,36 @@
+Received: from WPA-WEB02.wpacorp.local ([10.20.6.115])
+ by gwia.wpacorp.local with ESMTP id 972A9ACB9DD7; Fri, 09 Oct 2026 01:18:35 -0500
+Message-ID: <B4C7A61B0200E05B000B355E@gwia.wpacorp.example>
+Date: Fri, 09 Oct 2026 01:18:31 -0500 (CDT)
+From: "WPA ErrorMailer" <errormailer@wpacorp.example>
+To: "Web Dev Errors" <webdev-errors@wpacorp.example>
+Subject: Production | Error: NotFoundException in Waypoint.Portal
+X-Mailer: GroupWise Internet Agent 18.5.0
+X-Wpa-Host: WPA-WEB02
+X-Wpa-Environment: Production
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+An unhandled exception was logged by Waypoint.Portal.
+
+Environment   : Production
+Server        : WPA-WEB02
+Time          : 10/9/2026 1:18:31 AM
+Release       : 4.11.0+e196161
+Circuit       : PogUkGgd4ysF5tcICHRojg
+RequestId     : 0HNMKEUC2OHRB:0000001E
+CorrelationId : e1fab7e4-1c23-4f19-943e-77c270fe3e06
+User          : (anonymous)
+Request       : GET /wp-admin/setup-config.php
+Remote IP     : 192.0.2.14
+User-Agent    : Mozilla/5.0 zgrab/0.x
+
+Exception:
+Waypoint.Portal.Infrastructure.NotFoundException: No endpoint matched GET /wp-admin/setup-config.php
+   at Waypoint.Portal.Infrastructure.StrictRoutingMiddleware.InvokeAsync(HttpContext context) in D:\a\1\s\src\Waypoint.Portal\Infrastructure\StrictRoutingMiddleware.cs:line 44
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass2_0.<UseMiddleware>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.Invoke(HttpContext context)
+
+-- 
+Sent automatically by WPA ErrorMailer 3.2. Do not reply to this message.

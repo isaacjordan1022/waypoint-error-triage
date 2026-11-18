@@ -1,0 +1,40 @@
+Received: from WPA-WEB03.wpacorp.local ([10.20.3.201])
+ by gwia.wpacorp.local with ESMTP id 28CAB1D6DA2C; Tue, 10 Nov 2026 17:49:37 -0600
+Message-ID: <0AEA4CC90200F222000640E4@gwia.wpacorp.example>
+Date: Tue, 10 Nov 2026 17:49:35 -0600 (CST)
+From: "WPA ErrorMailer" <errormailer@wpacorp.example>
+To: "Web Dev Errors" <webdev-errors@wpacorp.example>
+Subject: Production | Error: NullReferenceException in Waypoint.Portal
+X-Mailer: GroupWise Internet Agent 18.5.0
+X-Wpa-Host: WPA-WEB03
+X-Wpa-Environment: Production
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+An unhandled exception was logged by Waypoint.Portal.
+
+Environment   : Production
+Server        : WPA-WEB03
+Time          : 11/10/2026 5:49:35 PM
+Release       : 4.12.1+75aa65f
+Circuit       : x9ulkv0atrWzyqN20JeV4w
+RequestId     : 0HN4R0PBIK6EC:00000026
+CorrelationId : b8b78255-d037-4baf-ad14-96256cdc0693
+User          : rogletree@eckertfamilyfarms.example
+Account       : 12045 Eckert Family Farms
+Page          : /invoices/pay
+Invoice       : INV-2026-095674
+PO Number     : (none)
+
+Exception:
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Waypoint.Portal.Services.InvoiceService.<>c__DisplayClass15_0.<ApplyPaymentAsync>b__0(InvoiceLine line) in D:\a\1\s\src\Waypoint.Portal\Services\InvoiceService.cs:line 219
+   at System.Linq.Enumerable.Sum[TSource](IEnumerable`1 source, Func`2 selector)
+   at Waypoint.Portal.Services.InvoiceService.ApplyPaymentAsync(PaymentRequest request, CancellationToken ct) in D:\a\1\s\src\Waypoint.Portal\Services\InvoiceService.cs:line 211
+   at Waypoint.Portal.Components.Pages.Invoices.Pay.SubmitPaymentAsync() in D:\a\1\s\src\Waypoint.Portal\Components\Pages\Invoices\Pay.razor:line 91
+   at Microsoft.AspNetCore.Components.ComponentBase.CallStateHasChangedOnAsyncCompletion(Task task)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle, ComponentState owningComponentState)
+
+-- 
+Sent automatically by WPA ErrorMailer 3.2. Do not reply to this message.

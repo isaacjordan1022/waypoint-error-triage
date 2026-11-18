@@ -1,0 +1,53 @@
+Received: from WPA-RPT01.wpacorp.local ([10.20.5.172])
+ by gwia.wpacorp.local with ESMTP id E798728F45BB; Wed, 21 Oct 2026 23:16:59 -0500
+Message-ID: <81FC793B02006BEE00031133@gwia.wpacorp.example>
+Date: Wed, 21 Oct 2026 23:16:56 -0500 (CDT)
+From: "WPA ErrorMailer" <errormailer@wpacorp.example>
+To: "Web Dev Errors" <webdev-errors@wpacorp.example>
+Subject: Production | Error: SqlException in Waypoint.Reports
+X-Mailer: GroupWise Internet Agent 18.5.0
+X-Wpa-Host: WPA-RPT01
+X-Wpa-Environment: Production
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+An unhandled exception was logged by Waypoint.Reports.
+
+Environment   : Production
+Server        : WPA-RPT01
+Time          : 10/21/2026 11:16:56 PM
+Release       : 3.8.0+6a3d13e
+CorrelationId : 00af2bad-b9d6-479b-a40f-aa2ff36450ac
+Report        : 26-294-2863
+Connection    : Server=3Dtcp:wpa-sql-prod01.wpacorp.local,1433;Database=3DW=
+aypointReports;User ID=3Dreports_svc;Password=3DHarvest#2026!Prod;Encrypt=
+=3DTrue;TrustServerCertificate=3DTrue;
+
+Exception:
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or in=
+stance-specific error occurred while establishing a connection to SQL Serve=
+r. The server was not found or was not accessible. Verify that the instance=
+ name is correct and that SQL Server is configured to allow remote connecti=
+ons. (provider: TCP Provider, error: 0 - No such host is known.)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException e=
+xception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionP=
+oolIdentity identity, SqlConnectionString connectionOptions, SqlCredential =
+credential, Object providerInfo, String newPassword, SecureString newSecure=
+Password, Boolean redirectedUserInstance, SqlConnectionString userConnectio=
+nOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHand=
+ling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnection.OpenAsync(CancellationToken ca=
+ncellationToken)
+   at Waypoint.Reports.Data.ReportRepository.GetReportModelAsync(String rep=
+ortNumber, CancellationToken ct) in D:\a\1\s\src\Waypoint.Reports\Data\Repo=
+rtRepository.cs:line 52
+   at Waypoint.Reports.Workers.ReportQueueWorker.ProcessAsync(ReportJob job=
+, CancellationToken ct) in D:\a\1\s\src\Waypoint.Reports\Workers\ReportQueu=
+eWorker.cs:line 41
+ClientConnectionId:904d27d3-ccfa-40aa-a918-4fe9dc1d6309
+Error Number:11001,State:0,Class:20
+
+--=20
+Sent automatically by WPA ErrorMailer 3.2. Do not reply to this message.

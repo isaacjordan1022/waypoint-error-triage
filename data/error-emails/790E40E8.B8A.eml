@@ -1,0 +1,116 @@
+Received: from WPA-WEB03.wpacorp.local ([10.20.3.201])
+ by gwia.wpacorp.local with ESMTP id 70AAFFF6CED0; Mon, 02 Nov 2026 07:01:28 -0600
+Message-ID: <F7F57D2B0200B5A8000EAFD6@gwia.wpacorp.example>
+Date: Mon, 02 Nov 2026 07:01:24 CST
+From: "WPA ErrorMailer" <errormailer@wpacorp.example>
+To: "Web Dev Errors" <webdev-errors@wpacorp.example>
+Subject: Production | Error: SqlException in Waypoint.Portal
+X-Mailer: GroupWise Internet Agent 18.5.0
+X-Wpa-Host: WPA-WEB03
+X-Wpa-Environment: Production
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=_GWF931B683A08717AD"
+
+This is a multi-part message in MIME format.
+
+--=_GWF931B683A08717AD
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+An unhandled exception was logged by Waypoint.Portal.
+
+Environment   : Production
+Server        : WPA-WEB03
+Time          : 11/2/2026 7:01:24 AM
+Release       : 4.12.0+d0f99f7
+Circuit       : ni3PEGF3TiTDSsnEZSCnRA
+RequestId     : 0HNSGA234I5HH:00000009
+CorrelationId : a4426d1b-038b-4cba-a46a-ed9f41e43181
+User          : rquarles@lusksfeedandseed.example
+Account       : 12821 Lusk's Feed & Seed
+Page          : /submit/batch
+Batch         : 21785 (356 samples)
+
+Exception:
+Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID=
+ 63) was deadlocked on lock resources with another process and has been cho=
+sen as the deadlock victim. Rerun the transaction.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception=
+, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParser=
+StateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, Sq=
+lCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulk=
+CopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsync=
+Result asyncResult, Boolean isInternal, String endMethod)
+   at Waypoint.Portal.Data.SampleStatusRepository.UpdateBatchAsync(Int32 ba=
+tchId, IReadOnlyList`1 labNumbers, CancellationToken ct) in D:\a\1\s\src\Wa=
+ypoint.Portal\Data\SampleStatusRepository.cs:line 97
+   at Waypoint.Portal.Services.SubmissionService.SubmitBatchAsync(Submissio=
+nBatch batch, CancellationToken ct) in D:\a\1\s\src\Waypoint.Portal\Service=
+s\SubmissionService.cs:line 211
+ClientConnectionId:d9b833fd-0964-45f3-9f36-8532241939f4
+Error Number:1205,State:51,Class:13
+
+--=20
+Sent automatically by WPA ErrorMailer 3.2. Do not reply to this message.
+
+--=_GWF931B683A08717AD
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><meta charset=3D"utf-8"></head><body style=3D"font-family:Helve=
+tica,Arial,sans-serif">
+<h3 style=3D"color:#CB333B;margin:0 0 8px">Production | Error in Waypoint.P=
+ortal</h3>
+<table style=3D"font-size:13px">
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Environment</td><td>=
+Production</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Server</td><td>WPA-W=
+EB03</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Time</td><td>11/2/20=
+26 7:01:24 AM</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Release</td><td>4.12=
+.0+d0f99f7</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Circuit</td><td>ni3P=
+EGF3TiTDSsnEZSCnRA</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">RequestId</td><td>0H=
+NSGA234I5HH:00000009</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">CorrelationId</td><t=
+d>a4426d1b-038b-4cba-a46a-ed9f41e43181</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">User</td><td>rquarle=
+s@lusksfeedandseed.example</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Account</td><td>1282=
+1 Lusk&#x27;s Feed &amp; Seed</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Page</td><td>/submit=
+/batch</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Batch</td><td>21785 =
+(356 samples)</td></tr>
+</table>
+<pre style=3D"font-size:12px;background:#F7F7F7;padding:8px">Microsoft.Data=
+.SqlClient.SqlException (0x80131904): Transaction (Process ID 63) was deadl=
+ocked on lock resources with another process and has been chosen as the dea=
+dlock victim. Rerun the transaction.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception=
+, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParser=
+StateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, Sq=
+lCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulk=
+CopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsync=
+Result asyncResult, Boolean isInternal, String endMethod)
+   at Waypoint.Portal.Data.SampleStatusRepository.UpdateBatchAsync(Int32 ba=
+tchId, IReadOnlyList`1 labNumbers, CancellationToken ct) in D:\a\1\s\src\Wa=
+ypoint.Portal\Data\SampleStatusRepository.cs:line 97
+   at Waypoint.Portal.Services.SubmissionService.SubmitBatchAsync(Submissio=
+nBatch batch, CancellationToken ct) in D:\a\1\s\src\Waypoint.Portal\Service=
+s\SubmissionService.cs:line 211
+ClientConnectionId:d9b833fd-0964-45f3-9f36-8532241939f4
+Error Number:1205,State:51,Class:13</pre>
+<p style=3D"color:#808080;font-size:11px">Sent automatically by WPA ErrorMa=
+iler 3.2.</p>
+</body></html>
+
+--=_GWF931B683A08717AD--

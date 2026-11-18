@@ -1,0 +1,104 @@
+Received: from wpa-mobile-api-c0d55.wpacorp.local ([10.20.2.230])
+ by gwia.wpacorp.local with ESMTP id B430C8C06695; Fri, 13 Nov 2026 16:06:34 -0600
+Message-ID: <C4B3E6D30200CB540007A1F7@gwia.wpacorp.example>
+Date: Fri, 13 Nov 2026 22:06:30 +0000
+From: "WPA ErrorMailer" <errormailer@wpacorp.example>
+To: "Web Dev Errors" <webdev-errors@wpacorp.example>
+Subject: Production | Error: TaskCanceledException in Waypoint.Mobile.Api
+X-Mailer: GroupWise Internet Agent 18.5.0
+X-Wpa-Host: wpa-mobile-api-c0d55
+X-Wpa-Environment: Production
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=_GWB1CE44DD521ECEEE"
+
+This is a multi-part message in MIME format.
+
+--=_GWB1CE44DD521ECEEE
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+An unhandled exception was logged by Waypoint.Mobile.Api.
+
+Environment   : Production
+Server        : wpa-mobile-api-c0d55
+Time          : 2026-11-13T22:06:30.167Z
+Release       : 2.7.1+05fb85b
+TraceId       : 00-dc97b08abe7394dd548fed0641f21148-ad83e7cf776766ed-00
+CorrelationId : 8d3c39bf-35d3-43ca-832a-94318dcd6aca
+User          : tdobbins@huckabybrothersag.example
+Account       : 14113 Huckaby Brothers Ag
+Request       : GET /api/v2/samples/18105/status
+
+Exception:
+System.Threading.Tasks.TaskCanceledException: The request was canceled due =
+to the configured HttpClient.Timeout of 30 seconds elapsing.
+ ---> System.TimeoutException: The operation was canceled.
+ ---> System.Threading.Tasks.TaskCanceledException: The operation was cance=
+led.
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, =
+Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemet=
+ryStarted, HttpResponseMessage response, CancellationTokenSource cts, Cance=
+llationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at Waypoint.Mobile.Api.Clients.LimsGatewayClient.GetSampleStatusAsync(St=
+ring labNumber, CancellationToken ct) in /src/Waypoint.Mobile.Api/Clients/L=
+imsGatewayClient.cs:line 88
+   at Waypoint.Mobile.Api.Controllers.SamplesController.GetStatusAsync(Stri=
+ng labNumber, CancellationToken ct) in /src/Waypoint.Mobile.Api/Controllers=
+/SamplesController.cs:line 29
+
+--=20
+Sent automatically by WPA ErrorMailer 3.2. Do not reply to this message.
+
+--=_GWB1CE44DD521ECEEE
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><meta charset=3D"utf-8"></head><body style=3D"font-family:Helve=
+tica,Arial,sans-serif">
+<h3 style=3D"color:#CB333B;margin:0 0 8px">Production | Error in Waypoint.M=
+obile.Api</h3>
+<table style=3D"font-size:13px">
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Environment</td><td>=
+Production</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Server</td><td>wpa-m=
+obile-api-c0d55</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Time</td><td>2026-11=
+-13T22:06:30.167Z</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Release</td><td>2.7.=
+1+05fb85b</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">TraceId</td><td>00-d=
+c97b08abe7394dd548fed0641f21148-ad83e7cf776766ed-00</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">CorrelationId</td><t=
+d>8d3c39bf-35d3-43ca-832a-94318dcd6aca</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">User</td><td>tdobbin=
+s@huckabybrothersag.example</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Account</td><td>1411=
+3 Huckaby Brothers Ag</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Request</td><td>GET =
+/api/v2/samples/18105/status</td></tr>
+</table>
+<pre style=3D"font-size:12px;background:#F7F7F7;padding:8px">System.Threadi=
+ng.Tasks.TaskCanceledException: The request was canceled due to the configu=
+red HttpClient.Timeout of 30 seconds elapsing.
+ ---&gt; System.TimeoutException: The operation was canceled.
+ ---&gt; System.Threading.Tasks.TaskCanceledException: The operation was ca=
+nceled.
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, =
+Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemet=
+ryStarted, HttpResponseMessage response, CancellationTokenSource cts, Cance=
+llationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at Waypoint.Mobile.Api.Clients.LimsGatewayClient.GetSampleStatusAsync(St=
+ring labNumber, CancellationToken ct) in /src/Waypoint.Mobile.Api/Clients/L=
+imsGatewayClient.cs:line 88
+   at Waypoint.Mobile.Api.Controllers.SamplesController.GetStatusAsync(Stri=
+ng labNumber, CancellationToken ct) in /src/Waypoint.Mobile.Api/Controllers=
+/SamplesController.cs:line 29</pre>
+<p style=3D"color:#808080;font-size:11px">Sent automatically by WPA ErrorMa=
+iler 3.2.</p>
+</body></html>
+
+--=_GWB1CE44DD521ECEEE--

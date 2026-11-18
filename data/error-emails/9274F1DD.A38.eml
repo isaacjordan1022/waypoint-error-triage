@@ -1,0 +1,41 @@
+Received: from WPA-WEB01.wpacorp.local ([10.20.4.218])
+ by gwia.wpacorp.local with ESMTP id EE92D6CBD18A; Fri, 09 Oct 2026 01:18:19 -0500
+Message-ID: <C89E9F01020004DE000C99DF@gwia.wpacorp.example>
+Date: Fri, 09 Oct 2026 01:18:15 -0500
+From: "WPA ErrorMailer" <errormailer@wpacorp.example>
+To: "Web Dev Errors" <webdev-errors@wpacorp.example>
+Subject: Production | Error: NotFoundException in Waypoint.Portal
+X-Mailer: GroupWise Internet Agent 18.5.0
+X-Wpa-Host: WPA-WEB01
+X-Wpa-Environment: Production
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+An unhandled exception was logged by Waypoint.Portal.
+
+Environment   : Production
+Server        : WPA-WEB01
+Time          : 10/9/2026 1:18:15 AM
+Release       : 4.11.0+e196161
+Circuit       : gzLRufQtFX8H55GBMDlqnw
+RequestId     : 0HNLBE792A74M:00000002
+CorrelationId : cebbdf91-7c7d-4f90-995e-f944c64be810
+User          : (anonymous)
+Request       : GET /admin/config.php
+Remote IP     : 192.0.2.14
+User-Agent    : Mozilla/5.0 zgrab/0.x
+
+Exception:
+Waypoint.Portal.Infrastructure.NotFoundException: No endpoint matched GET /=
+admin/config.php
+   at Waypoint.Portal.Infrastructure.StrictRoutingMiddleware.InvokeAsync(Ht=
+tpContext context) in D:\a\1\s\src\Waypoint.Portal\Infrastructure\StrictRou=
+tingMiddleware.cs:line 44
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClas=
+s2_0.<UseMiddleware>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.Invok=
+e(HttpContext context)
+
+--=20
+Sent automatically by WPA ErrorMailer 3.2. Do not reply to this message.

@@ -1,0 +1,37 @@
+Received: from wpa-mobile-api-7f9c4.wpacorp.local ([10.20.9.68])
+ by gwia.wpacorp.local with ESMTP id B363820B2934; Fri, 06 Nov 2026 17:46:17 -0600
+Message-ID: <0B4B2AB1020036A50008E22E@gwia.wpacorp.example>
+Date: Fri, 06 Nov 2026 23:46:13 +0000
+From: "WPA ErrorMailer" <errormailer@wpacorp.example>
+To: "Web Dev Errors" <webdev-errors@wpacorp.example>
+Subject: Production | Error: NullReferenceException in Waypoint.Mobile.Api
+X-Mailer: GroupWise Internet Agent 18.5.0
+X-Wpa-Host: wpa-mobile-api-7f9c4
+X-Wpa-Environment: Production
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+An unhandled exception was logged by Waypoint.Mobile.Api.
+
+Environment   : Production
+Server        : wpa-mobile-api-7f9c4
+Time          : 2026-11-06T23:46:13.882Z
+Release       : 2.7.0+f202086
+TraceId       : 00-7fb099e1a718f04f05ed8b3601a13afa-9f6095f90c55a0e5-00
+CorrelationId : 2f0c7e2d-3944-4fc4-9092-6491582f78cc
+User          : jpendergast@hensleybrothersagllc.example
+Account       : 37775 Hensley Brothers Ag, LLC
+Request       : GET /api/v2/reports/26-310-9261
+
+Exception:
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Waypoint.Mobile.Api.Mapping.ResultsMapper.MapTissue(TissueResult result) in /src/Waypoint.Mobile.Api/Mapping/ResultsMapper.cs:line 57
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at Waypoint.Mobile.Api.Controllers.ResultsController.GetReportAsync(String reportNumber, CancellationToken ct) in /src/Waypoint.Mobile.Api/Controllers/ResultsController.cs:line 41
+   at lambda_method221(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+
+-- 
+Sent automatically by WPA ErrorMailer 3.2. Do not reply to this message.

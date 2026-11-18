@@ -1,0 +1,19 @@
+# .NET
+bin/
+obj/
+TestResults/
+*.user
+*.suo
+.vs/
+.idea/
+
+# local databases
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+
+# OS and tooling
+.DS_Store
+__pycache__/
+.claude/settings.local.json

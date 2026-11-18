@@ -1,0 +1,40 @@
+Received: from WPA-RPT01.wpacorp.local ([10.20.5.172])
+ by gwia.wpacorp.local with ESMTP id 3FA835FF3393; Fri, 06 Nov 2026 14:44:01 -0600
+Message-ID: <A8AC4AFB020008550009C81C@gwia.wpacorp.example>
+Date: Fri, 06 Nov 2026 14:43:58 -0600 (CST)
+From: "WPA ErrorMailer" <errormailer@wpacorp.example>
+To: "Web Dev Errors" <webdev-errors@wpacorp.example>
+Subject: Production | Error: ReportGenerationException in Waypoint.Reports
+X-Mailer: GroupWise Internet Agent 18.5.0
+X-Wpa-Host: WPA-RPT01
+X-Wpa-Environment: Production
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+An unhandled exception was logged by Waypoint.Reports.
+
+Environment   : Production
+Server        : WPA-RPT01
+Time          : 11/6/2026 2:43:58 PM
+Release       : 3.8.1+a3bfd9d
+CorrelationId : d8ebb11d-0cb8-4ea6-aac9-a3746fe0a1bc
+Account       : 32924 Dunaway & Sons, Inc.
+Requested by  : dhuckaby@dunawayandsonsinc.example
+Report        : 26-310-8101
+Lab numbers   : 63536-63556
+Package       : S3M
+Template      : retailer-whitelabel
+
+Exception:
+Waypoint.Reports.ReportGenerationException: Failed to render report 26-310-8101 for account 32924 (template: retailer-whitelabel).
+ ---> System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'PdfCanvas'.
+   at Waypoint.Reports.Pdf.Sections.MicronutrientSection.Compose(IContainer container) in D:\a\1\s\src\Waypoint.Reports\Pdf\Sections\MicronutrientSection.cs:line 74
+   at Waypoint.Reports.Pdf.ReportPdfBuilder.RenderAsync(ReportModel model, CancellationToken ct) in D:\a\1\s\src\Waypoint.Reports\Pdf\ReportPdfBuilder.cs:line 133
+   --- End of inner exception stack trace ---
+   at Waypoint.Reports.Pdf.ReportPdfBuilder.RenderAsync(ReportModel model, CancellationToken ct) in D:\a\1\s\src\Waypoint.Reports\Pdf\ReportPdfBuilder.cs:line 151
+   at Waypoint.Reports.Workers.ReportQueueWorker.ProcessAsync(ReportJob job, CancellationToken ct) in D:\a\1\s\src\Waypoint.Reports\Workers\ReportQueueWorker.cs:line 66
+
+-- 
+Sent automatically by WPA ErrorMailer 3.2. Do not reply to this message.

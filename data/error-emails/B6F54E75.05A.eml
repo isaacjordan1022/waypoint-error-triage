@@ -1,0 +1,110 @@
+Received: from WPA-RPT01.wpacorp.local ([10.20.5.172])
+ by gwia.wpacorp.local with ESMTP id 2B36C4CE0E85; Thu, 22 Oct 2026 07:08:10 -0500
+Message-ID: <2C1A70C802001F0700094A3E@gwia.wpacorp.example>
+Date: Thu, 22 Oct 2026 07:08:09 -0500 (CDT)
+From: "WPA ErrorMailer" <errormailer@wpacorp.example>
+To: "Web Dev Errors" <webdev-errors@wpacorp.example>
+Subject: Production | Error: ReportGenerationException in Waypoint.Reports
+X-Mailer: GroupWise Internet Agent 18.5.0
+X-Wpa-Host: WPA-RPT01
+X-Wpa-Environment: Production
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=_GW3A727C4A5C0453D0"
+
+This is a multi-part message in MIME format.
+
+--=_GW3A727C4A5C0453D0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+An unhandled exception was logged by Waypoint.Reports.
+
+Environment   : Production
+Server        : WPA-RPT01
+Time          : 10/22/2026 7:08:09 AM
+Release       : 3.8.0+6a3d13e
+CorrelationId : 96bd0f63-1bf3-42e5-8c6b-3119779ee330
+Account       : 21516 Merriweather & Sons
+Requested by  : dnordquist@merriweatherandsons.example
+Report        : 26-295-4206
+Lab numbers   : 80578-80592
+Package       : S3M
+Template      : retailer-whitelabel
+
+Exception:
+Waypoint.Reports.ReportGenerationException: Failed to render report 26-295-=
+4206 for account 21516 (template: retailer-whitelabel).
+ ---> System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'PdfCanvas'.
+   at Waypoint.Reports.Pdf.Sections.MicronutrientSection.Compose(IContainer=
+ container) in D:\a\1\s\src\Waypoint.Reports\Pdf\Sections\MicronutrientSect=
+ion.cs:line 74
+   at Waypoint.Reports.Pdf.ReportPdfBuilder.RenderAsync(ReportModel model, =
+CancellationToken ct) in D:\a\1\s\src\Waypoint.Reports\Pdf\ReportPdfBuilder=
+.cs:line 133
+   --- End of inner exception stack trace ---
+   at Waypoint.Reports.Pdf.ReportPdfBuilder.RenderAsync(ReportModel model, =
+CancellationToken ct) in D:\a\1\s\src\Waypoint.Reports\Pdf\ReportPdfBuilder=
+.cs:line 151
+   at Waypoint.Reports.Workers.ReportQueueWorker.ProcessAsync(ReportJob job=
+, CancellationToken ct) in D:\a\1\s\src\Waypoint.Reports\Workers\ReportQueu=
+eWorker.cs:line 66
+
+--=20
+Sent automatically by WPA ErrorMailer 3.2. Do not reply to this message.
+
+--=_GW3A727C4A5C0453D0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><meta charset=3D"utf-8"></head><body style=3D"font-family:Helve=
+tica,Arial,sans-serif">
+<h3 style=3D"color:#CB333B;margin:0 0 8px">Production | Error in Waypoint.R=
+eports</h3>
+<table style=3D"font-size:13px">
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Environment</td><td>=
+Production</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Server</td><td>WPA-R=
+PT01</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Time</td><td>10/22/2=
+026 7:08:09 AM</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Release</td><td>3.8.=
+0+6a3d13e</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">CorrelationId</td><t=
+d>96bd0f63-1bf3-42e5-8c6b-3119779ee330</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Account</td><td>2151=
+6 Merriweather &amp; Sons</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Requested by</td><td=
+>dnordquist@merriweatherandsons.example</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Report</td><td>26-29=
+5-4206</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Lab numbers</td><td>=
+80578-80592</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Package</td><td>S3M<=
+/td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Template</td><td>ret=
+ailer-whitelabel</td></tr>
+</table>
+<pre style=3D"font-size:12px;background:#F7F7F7;padding:8px">Waypoint.Repor=
+ts.ReportGenerationException: Failed to render report 26-295-4206 for accou=
+nt 21516 (template: retailer-whitelabel).
+ ---&gt; System.ObjectDisposedException: Cannot access a disposed object.
+Object name: &#x27;PdfCanvas&#x27;.
+   at Waypoint.Reports.Pdf.Sections.MicronutrientSection.Compose(IContainer=
+ container) in D:\a\1\s\src\Waypoint.Reports\Pdf\Sections\MicronutrientSect=
+ion.cs:line 74
+   at Waypoint.Reports.Pdf.ReportPdfBuilder.RenderAsync(ReportModel model, =
+CancellationToken ct) in D:\a\1\s\src\Waypoint.Reports\Pdf\ReportPdfBuilder=
+.cs:line 133
+   --- End of inner exception stack trace ---
+   at Waypoint.Reports.Pdf.ReportPdfBuilder.RenderAsync(ReportModel model, =
+CancellationToken ct) in D:\a\1\s\src\Waypoint.Reports\Pdf\ReportPdfBuilder=
+.cs:line 151
+   at Waypoint.Reports.Workers.ReportQueueWorker.ProcessAsync(ReportJob job=
+, CancellationToken ct) in D:\a\1\s\src\Waypoint.Reports\Workers\ReportQueu=
+eWorker.cs:line 66</pre>
+<p style=3D"color:#808080;font-size:11px">Sent automatically by WPA ErrorMa=
+iler 3.2.</p>
+</body></html>
+
+--=_GW3A727C4A5C0453D0--

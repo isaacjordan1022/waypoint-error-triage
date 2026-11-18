@@ -1,0 +1,94 @@
+Received: from WPA-WEB04.wpacorp.local ([10.20.3.68])
+ by gwia.wpacorp.local with ESMTP id 435F1CA78218; Mon, 19 Oct 2026 10:39:56 -0500
+Message-ID: <ACCF06C702000087000F7C72@gwia.wpacorp.example>
+Date: Mon, 19 Oct 2026 10:39:53 -0500 (CDT)
+From: "WPA ErrorMailer" <errormailer@wpacorp.example>
+To: "Web Dev Errors" <webdev-errors@wpacorp.example>
+Subject: Production | Error: InvalidOperationException in Waypoint.Portal
+X-Mailer: GroupWise Internet Agent 18.5.0
+X-Wpa-Host: WPA-WEB04
+X-Wpa-Environment: Production
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=_GW1C432E5458F36023"
+
+This is a multi-part message in MIME format.
+
+--=_GW1C432E5458F36023
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+An unhandled exception was logged by Waypoint.Portal.
+
+Environment   : Production
+Server        : WPA-WEB04
+Time          : 10/19/2026 10:39:53 AM
+Release       : 4.11.2+fc388e6
+Circuit       : Gi4cbavC4FygT0NwLJLaIw
+RequestId     : 0HNNBIE7PQDQG:0000001F
+CorrelationId : 636781d0-4010-42a2-977a-e41906f770ff
+User          : mhensley@wakefieldfamilyfarms.example
+Account       : 24843 Wakefield Family Farms
+Page          : /submit
+Field         : F-4985
+
+Exception:
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Waypoint.Portal.Services.SubmissionService.GetDefaultCropCode(Int32 a=
+ccountNumber, String fieldId) in D:\a\1\s\src\Waypoint.Portal\Services\Subm=
+issionService.cs:line 133
+   at Waypoint.Portal.Components.Pages.Submit.SampleGrid.OnFieldSelected(Ch=
+angeEventArgs e) in D:\a\1\s\src\Waypoint.Portal\Components\Pages\Submit\Sa=
+mpleGrid.razor:line 207
+
+--=20
+Sent automatically by WPA ErrorMailer 3.2. Do not reply to this message.
+
+--=_GW1C432E5458F36023
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><meta charset=3D"utf-8"></head><body style=3D"font-family:Helve=
+tica,Arial,sans-serif">
+<h3 style=3D"color:#CB333B;margin:0 0 8px">Production | Error in Waypoint.P=
+ortal</h3>
+<table style=3D"font-size:13px">
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Environment</td><td>=
+Production</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Server</td><td>WPA-W=
+EB04</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Time</td><td>10/19/2=
+026 10:39:53 AM</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Release</td><td>4.11=
+.2+fc388e6</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Circuit</td><td>Gi4c=
+bavC4FygT0NwLJLaIw</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">RequestId</td><td>0H=
+NNBIE7PQDQG:0000001F</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">CorrelationId</td><t=
+d>636781d0-4010-42a2-977a-e41906f770ff</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">User</td><td>mhensle=
+y@wakefieldfamilyfarms.example</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Account</td><td>2484=
+3 Wakefield Family Farms</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Page</td><td>/submit=
+</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Field</td><td>F-4985=
+</td></tr>
+</table>
+<pre style=3D"font-size:12px;background:#F7F7F7;padding:8px">System.Invalid=
+OperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Waypoint.Portal.Services.SubmissionService.GetDefaultCropCode(Int32 a=
+ccountNumber, String fieldId) in D:\a\1\s\src\Waypoint.Portal\Services\Subm=
+issionService.cs:line 133
+   at Waypoint.Portal.Components.Pages.Submit.SampleGrid.OnFieldSelected(Ch=
+angeEventArgs e) in D:\a\1\s\src\Waypoint.Portal\Components\Pages\Submit\Sa=
+mpleGrid.razor:line 207</pre>
+<p style=3D"color:#808080;font-size:11px">Sent automatically by WPA ErrorMa=
+iler 3.2.</p>
+</body></html>
+
+--=_GW1C432E5458F36023--

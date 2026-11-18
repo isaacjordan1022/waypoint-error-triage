@@ -1,0 +1,92 @@
+Received: from WPA-INT01.wpacorp.local ([10.20.9.217])
+ by gwia.wpacorp.local with ESMTP id 925AE1747EDE; Mon, 02 Nov 2026 09:30:03 -0600
+Message-ID: <360B94850200B23200016B90@gwia.wpacorp.example>
+Date: Mon, 02 Nov 2026 10:30:00 EST
+From: "WPA ErrorMailer" <errormailer@wpacorp.example>
+To: "Web Dev Errors" <webdev-errors@wpacorp.example>
+Subject: Production | Error: HttpRequestException in
+ Waypoint.Integrations.Ups
+X-Mailer: GroupWise Internet Agent 18.5.0
+X-Wpa-Host: WPA-INT01
+X-Wpa-Environment: Production
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=_GWCD1C5A26906F6E99"
+
+This is a multi-part message in MIME format.
+
+--=_GWCD1C5A26906F6E99
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+An unhandled exception was logged by Waypoint.Integrations.Ups.
+
+Environment   : Production
+Server        : WPA-INT01
+Time          : 11/2/2026 10:30:00 AM
+Release       : 2.3.0+fe2c9e4
+CorrelationId : 24b93e10-3812-4f8a-860f-9df61153b5bf
+Account       : 26844 Clearwater Bend Producers Cooperative
+Batch         : 22542
+Shipment      : 1ZH6D6LR0366815040
+
+Exception:
+System.Net.Http.HttpRequestException: Response status code does not indicat=
+e success: 429 (Too Many Requests).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Waypoint.Integrations.Ups.UpsShippingClient.CreateLabelAsync(LabelReq=
+uest request, CancellationToken ct) in C:\build\ups\src\Waypoint.Integratio=
+ns.Ups\UpsShippingClient.cs:line 141
+   at Waypoint.Integrations.Ups.LabelBatchService.ProcessBatchAsync(Int32 b=
+atchId, CancellationToken ct) in C:\build\ups\src\Waypoint.Integrations.Ups=
+\LabelBatchService.cs:line 63
+   at Waypoint.Integrations.Ups.Jobs.LabelQueueWorker.ExecuteAsync(Cancella=
+tionToken stoppingToken) in C:\build\ups\src\Waypoint.Integrations.Ups\Jobs=
+\LabelQueueWorker.cs:line 38
+
+--=20
+Sent automatically by WPA ErrorMailer 3.2. Do not reply to this message.
+
+--=_GWCD1C5A26906F6E99
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><meta charset=3D"utf-8"></head><body style=3D"font-family:Helve=
+tica,Arial,sans-serif">
+<h3 style=3D"color:#CB333B;margin:0 0 8px">Production | Error in Waypoint.I=
+ntegrations.Ups</h3>
+<table style=3D"font-size:13px">
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Environment</td><td>=
+Production</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Server</td><td>WPA-I=
+NT01</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Time</td><td>11/2/20=
+26 10:30:00 AM</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Release</td><td>2.3.=
+0+fe2c9e4</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">CorrelationId</td><t=
+d>24b93e10-3812-4f8a-860f-9df61153b5bf</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Account</td><td>2684=
+4 Clearwater Bend Producers Cooperative</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Batch</td><td>22542<=
+/td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Shipment</td><td>1ZH=
+6D6LR0366815040</td></tr>
+</table>
+<pre style=3D"font-size:12px;background:#F7F7F7;padding:8px">System.Net.Htt=
+p.HttpRequestException: Response status code does not indicate success: 429=
+ (Too Many Requests).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Waypoint.Integrations.Ups.UpsShippingClient.CreateLabelAsync(LabelReq=
+uest request, CancellationToken ct) in C:\build\ups\src\Waypoint.Integratio=
+ns.Ups\UpsShippingClient.cs:line 141
+   at Waypoint.Integrations.Ups.LabelBatchService.ProcessBatchAsync(Int32 b=
+atchId, CancellationToken ct) in C:\build\ups\src\Waypoint.Integrations.Ups=
+\LabelBatchService.cs:line 63
+   at Waypoint.Integrations.Ups.Jobs.LabelQueueWorker.ExecuteAsync(Cancella=
+tionToken stoppingToken) in C:\build\ups\src\Waypoint.Integrations.Ups\Jobs=
+\LabelQueueWorker.cs:line 38</pre>
+<p style=3D"color:#808080;font-size:11px">Sent automatically by WPA ErrorMa=
+iler 3.2.</p>
+</body></html>
+
+--=_GWCD1C5A26906F6E99--

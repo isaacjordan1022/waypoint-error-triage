@@ -1,0 +1,35 @@
+Received: from WPA-WEB03.wpacorp.local ([10.20.3.201])
+ by gwia.wpacorp.local with ESMTP id 6FFD4C6CB9FE; Tue, 03 Nov 2026 13:43:10 -0600
+Message-ID: <D6D27A9A0200423A000E57A1@gwia.wpacorp.example>
+Date: Tue, 03 Nov 2026 13:43:09 -0600 (CST)
+From: "WPA ErrorMailer" <errormailer@wpacorp.example>
+To: "Web Dev Errors" <webdev-errors@wpacorp.example>
+Subject: Production | Error: NullReferenceException in Waypoint.Portal
+X-Mailer: GroupWise Internet Agent 18.5.0
+X-Wpa-Host: WPA-WEB03
+X-Wpa-Environment: Production
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+An unhandled exception was logged by Waypoint.Portal.
+
+Environment   : Production
+Server        : WPA-WEB03
+Time          : 11/3/2026 1:43:09 PM
+Release       : 4.12.0+d0f99f7
+Circuit       : _aPI3CZ0Y1oN-FSZo5N3XA
+RequestId     : 0HNKJQ5QUIQSS:00000022
+CorrelationId : 8512c219-1178-480c-8b09-0204aa1d147a
+User          : cdeering@hensleyfarms.example
+Account       : 38914 Hensley Farms
+Page          : /samples/track/84570
+
+Exception:
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Waypoint.Portal.Components.Pages.Samples.Track.OnParametersSetAsync() in D:\a\1\s\src\Waypoint.Portal\Components\Pages\Samples\Track.razor:line 54
+   at Microsoft.AspNetCore.Components.ComponentBase.RunInitAndSetParametersAsync()
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle, ComponentState owningComponentState)
+
+-- 
+Sent automatically by WPA ErrorMailer 3.2. Do not reply to this message.

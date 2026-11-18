@@ -1,0 +1,37 @@
+Received: from WPA-WEB04.wpacorp.local ([10.20.3.68])
+ by gwia.wpacorp.local with ESMTP id 2FCFE6133261; Tue, 10 Nov 2026 14:36:11 -0600
+Message-ID: <19621EE5020054E8000A6CF9@gwia.wpacorp.example>
+Date: Tue, 10 Nov 2026 14:36:09 -0600 (CST)
+From: "WPA ErrorMailer" <errormailer@wpacorp.example>
+To: "Web Dev Errors" <webdev-errors@wpacorp.example>
+Subject: Production | Error: InvalidOperationException in Waypoint.Portal
+X-Mailer: GroupWise Internet Agent 18.5.0
+X-Wpa-Host: WPA-WEB04
+X-Wpa-Environment: Production
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+An unhandled exception was logged by Waypoint.Portal.
+
+Environment   : Production
+Server        : WPA-WEB04
+Time          : 11/10/2026 2:36:09 PM
+Release       : 4.12.1+75aa65f
+Circuit       : 4_ymuS3H_J_K7VoalxoDQg
+RequestId     : 0HNQ1LRME5HDH:0000000C
+CorrelationId : d3a9ba8d-7ec9-4b88-8865-fcaa2df36601
+User          : dmaddox@schoenfeldagronomyserv.example
+Account       : 39912 Schoenfeld Agronomy Services
+Page          : /submit
+Field         : F-7845
+
+Exception:
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Waypoint.Portal.Services.SubmissionService.GetDefaultCropCode(Int32 accountNumber, String fieldId) in D:\a\1\s\src\Waypoint.Portal\Services\SubmissionService.cs:line 133
+   at Waypoint.Portal.Components.Pages.Submit.SampleGrid.OnFieldSelected(ChangeEventArgs e) in D:\a\1\s\src\Waypoint.Portal\Components\Pages\Submit\SampleGrid.razor:line 207
+
+-- 
+Sent automatically by WPA ErrorMailer 3.2. Do not reply to this message.

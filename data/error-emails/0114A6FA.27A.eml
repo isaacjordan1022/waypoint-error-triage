@@ -1,0 +1,35 @@
+Received: from WPA-INT01.wpacorp.local ([10.20.9.217])
+ by gwia.wpacorp.local with ESMTP id 7F636817FF2E; Thu, 05 Nov 2026 14:54:36 -0600
+Message-ID: <0CDDF1C602007232000D23AA@gwia.wpacorp.example>
+Date: Thu, 05 Nov 2026 15:54:34 -0500
+From: "WPA ErrorMailer" <errormailer@wpacorp.example>
+To: "Web Dev Errors" <webdev-errors@wpacorp.example>
+Subject: Production | Error: HttpRequestException in
+ Waypoint.Integrations.Ups
+X-Mailer: GroupWise Internet Agent 18.5.0
+X-Wpa-Host: WPA-INT01
+X-Wpa-Environment: Production
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+An unhandled exception was logged by Waypoint.Integrations.Ups.
+
+Environment   : Production
+Server        : WPA-INT01
+Time          : 11/5/2026 3:54:34 PM
+Release       : 2.3.0+fe2c9e4
+CorrelationId : 723d5250-0887-45cc-be56-58ab3763afde
+Account       : 20436 Cedar Bluff Producers Cooperative
+Batch         : 21805
+Shipment      : 1Z4PUJ6L0331522123
+
+Exception:
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 503 (Service Unavailable).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Waypoint.Integrations.Ups.UpsShippingClient.CreateLabelAsync(LabelRequest request, CancellationToken ct) in C:\build\ups\src\Waypoint.Integrations.Ups\UpsShippingClient.cs:line 141
+   at Waypoint.Integrations.Ups.LabelBatchService.ProcessBatchAsync(Int32 batchId, CancellationToken ct) in C:\build\ups\src\Waypoint.Integrations.Ups\LabelBatchService.cs:line 63
+   at Waypoint.Integrations.Ups.Jobs.LabelQueueWorker.ExecuteAsync(CancellationToken stoppingToken) in C:\build\ups\src\Waypoint.Integrations.Ups\Jobs\LabelQueueWorker.cs:line 38
+
+-- 
+Sent automatically by WPA ErrorMailer 3.2. Do not reply to this message.

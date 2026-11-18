@@ -1,0 +1,3 @@
+# Keep the generated data byte-for-byte (CRLF line endings, encodings) so baseline hashes match on every OS.
+data/** -text
+hosts/** -text

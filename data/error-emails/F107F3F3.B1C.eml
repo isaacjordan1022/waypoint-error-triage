@@ -1,0 +1,93 @@
+Received: from WPA-WEB01.wpacorp.local ([10.20.4.218])
+ by gwia.wpacorp.local with ESMTP id 23BCDD32FCEB; Sat, 17 Oct 2026 08:45:20 -0500
+Message-ID: <CAC9E3FE020081210004E3C6@gwia.wpacorp.example>
+Date: Sat, 17 Oct 2026 08:45:16 -0500 (CDT)
+From: "WPA ErrorMailer" <errormailer@wpacorp.example>
+To: "Web Dev Errors" <webdev-errors@wpacorp.example>
+Subject: Production | Error: JSDisconnectedException in Waypoint.Portal
+X-Mailer: GroupWise Internet Agent 18.5.0
+X-Wpa-Host: WPA-WEB01
+X-Wpa-Environment: Production
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=_GW665D2F1A0A6B68B2"
+
+This is a multi-part message in MIME format.
+
+--=_GW665D2F1A0A6B68B2
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+An unhandled exception was logged by Waypoint.Portal.
+
+Environment   : Production
+Server        : WPA-WEB01
+Time          : 10/17/2026 8:45:16 AM
+Release       : 4.11.2+fc388e6
+Circuit       : GmAIB6ePSfKiYdbchb6sLw
+RequestId     : 0HNHDUJTKM3C2:00000028
+CorrelationId : ec139f07-1a65-4ef6-8313-e3efa3a01a1b
+User          : jstallworth@merriweatherbrothersag.example
+Account       : 13505 Merriweather Brothers Ag
+Page          : /invoices
+
+Exception:
+Microsoft.JSInterop.JSDisconnectedException: JavaScript interop calls canno=
+t be issued at this time. This is because the circuit has disconnected and =
+is being disposed.
+   at Microsoft.AspNetCore.Components.Server.Circuits.RemoteJSRuntime.Begin=
+InvokeJS(Int64 asyncHandle, String identifier, String argsJson, JSCallResul=
+tType resultType, Int64 targetInstanceId)
+   at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanc=
+eId, String identifier, CancellationToken cancellationToken, Object[] args)
+   at Waypoint.Portal.Components.Layout.MainLayout.DisposeAsync() in D:\a\1=
+\s\src\Waypoint.Portal\Components\Layout\MainLayout.razor:line 112
+
+--=20
+Sent automatically by WPA ErrorMailer 3.2. Do not reply to this message.
+
+--=_GW665D2F1A0A6B68B2
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><meta charset=3D"utf-8"></head><body style=3D"font-family:Helve=
+tica,Arial,sans-serif">
+<h3 style=3D"color:#CB333B;margin:0 0 8px">Production | Error in Waypoint.P=
+ortal</h3>
+<table style=3D"font-size:13px">
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Environment</td><td>=
+Production</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Server</td><td>WPA-W=
+EB01</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Time</td><td>10/17/2=
+026 8:45:16 AM</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Release</td><td>4.11=
+.2+fc388e6</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Circuit</td><td>GmAI=
+B6ePSfKiYdbchb6sLw</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">RequestId</td><td>0H=
+NHDUJTKM3C2:00000028</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">CorrelationId</td><t=
+d>ec139f07-1a65-4ef6-8313-e3efa3a01a1b</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">User</td><td>jstallw=
+orth@merriweatherbrothersag.example</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Account</td><td>1350=
+5 Merriweather Brothers Ag</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Page</td><td>/invoic=
+es</td></tr>
+</table>
+<pre style=3D"font-size:12px;background:#F7F7F7;padding:8px">Microsoft.JSIn=
+terop.JSDisconnectedException: JavaScript interop calls cannot be issued at=
+ this time. This is because the circuit has disconnected and is being dispo=
+sed.
+   at Microsoft.AspNetCore.Components.Server.Circuits.RemoteJSRuntime.Begin=
+InvokeJS(Int64 asyncHandle, String identifier, String argsJson, JSCallResul=
+tType resultType, Int64 targetInstanceId)
+   at Microsoft.JSInterop.JSRuntime.InvokeAsync[TValue](Int64 targetInstanc=
+eId, String identifier, CancellationToken cancellationToken, Object[] args)
+   at Waypoint.Portal.Components.Layout.MainLayout.DisposeAsync() in D:\a\1=
+\s\src\Waypoint.Portal\Components\Layout\MainLayout.razor:line 112</pre>
+<p style=3D"color:#808080;font-size:11px">Sent automatically by WPA ErrorMa=
+iler 3.2.</p>
+</body></html>
+
+--=_GW665D2F1A0A6B68B2--

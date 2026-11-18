@@ -1,0 +1,49 @@
+Received: from WPA-WEB01.wpacorp.local ([10.20.4.218])
+ by gwia.wpacorp.local with ESMTP id F32E3DB6AAB6; Wed, 11 Nov 2026 10:07:09 -0600
+Message-ID: <B3EED7BC020044A80007FD6D@gwia.wpacorp.example>
+Date: Wed, 11 Nov 2026 10:07:05 -0600 (CST)
+From: "WPA ErrorMailer" <errormailer@wpacorp.example>
+To: "Web Dev Errors" <webdev-errors@wpacorp.example>
+Subject: Production | Error: NullReferenceException in Waypoint.Portal
+X-Mailer: GroupWise Internet Agent 18.5.0
+X-Wpa-Host: WPA-WEB01
+X-Wpa-Environment: Production
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+An unhandled exception was logged by Waypoint.Portal.
+
+Environment   : Production
+Server        : WPA-WEB01
+Time          : 11/11/2026 10:07:05 AM
+Release       : 4.12.1+75aa65f
+Circuit       : pXWa-1SAuJiCa37KN9NRyw
+RequestId     : 0HNKABC7D9RVD:00000014
+CorrelationId : 8928f9ea-5be3-4054-aef8-545733e25f16
+User          : tlindqvist@sandovalandsonsinc.example
+Account       : 36409 Sandoval & Sons, Inc.
+Page          : /invoices/pay
+Invoice       : INV-2026-065184
+PO Number     : (none)
+
+Exception:
+System.NullReferenceException: Object reference not set to an instance of a=
+n object.
+   at Waypoint.Portal.Services.InvoiceService.<>c__DisplayClass15_0.<ApplyP=
+aymentAsync>b__0(InvoiceLine line) in D:\a\1\s\src\Waypoint.Portal\Services=
+\InvoiceService.cs:line 219
+   at System.Linq.Enumerable.Sum[TSource](IEnumerable`1 source, Func`2 sele=
+ctor)
+   at Waypoint.Portal.Services.InvoiceService.ApplyPaymentAsync(PaymentRequ=
+est request, CancellationToken ct) in D:\a\1\s\src\Waypoint.Portal\Services=
+\InvoiceService.cs:line 211
+   at Waypoint.Portal.Components.Pages.Invoices.Pay.SubmitPaymentAsync() in=
+ D:\a\1\s\src\Waypoint.Portal\Components\Pages\Invoices\Pay.razor:line 91
+   at Microsoft.AspNetCore.Components.ComponentBase.CallStateHasChangedOnAs=
+yncCompletion(Task task)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTa=
+sk(Task taskToHandle, ComponentState owningComponentState)
+
+--=20
+Sent automatically by WPA ErrorMailer 3.2. Do not reply to this message.

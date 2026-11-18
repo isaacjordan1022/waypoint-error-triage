@@ -1,0 +1,35 @@
+Received: from WPA-INT01.wpacorp.local ([10.20.9.217])
+ by gwia.wpacorp.local with ESMTP id 61D86D3DE56C; Wed, 04 Nov 2026 08:03:25 -0600
+Message-ID: <A7E43959020027F3000F70D6@gwia.wpacorp.example>
+Date: Wed, 04 Nov 2026 09:03:24 -0500
+From: "WPA ErrorMailer" <errormailer@wpacorp.example>
+To: "Web Dev Errors" <webdev-errors@wpacorp.example>
+Subject: Production | Error: HttpRequestException in
+ Waypoint.Integrations.Ups
+X-Mailer: GroupWise Internet Agent 18.5.0
+X-Wpa-Host: WPA-INT01
+X-Wpa-Environment: Production
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+An unhandled exception was logged by Waypoint.Integrations.Ups.
+
+Environment   : Production
+Server        : WPA-INT01
+Time          : 11/4/2026 9:03:24 AM
+Release       : 2.3.0+fe2c9e4
+CorrelationId : 854c29e7-f1c0-460c-9d74-15f87bc6fe01
+Account       : 13750 Indigo Plains Ag Co-op
+Batch         : 22380
+Shipment      : 1Z6LRFV10324583488
+
+Exception:
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 429 (Too Many Requests).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Waypoint.Integrations.Ups.UpsShippingClient.CreateLabelAsync(LabelRequest request, CancellationToken ct) in C:\build\ups\src\Waypoint.Integrations.Ups\UpsShippingClient.cs:line 141
+   at Waypoint.Integrations.Ups.LabelBatchService.ProcessBatchAsync(Int32 batchId, CancellationToken ct) in C:\build\ups\src\Waypoint.Integrations.Ups\LabelBatchService.cs:line 63
+   at Waypoint.Integrations.Ups.Jobs.LabelQueueWorker.ExecuteAsync(CancellationToken stoppingToken) in C:\build\ups\src\Waypoint.Integrations.Ups\Jobs\LabelQueueWorker.cs:line 38
+
+-- 
+Sent automatically by WPA ErrorMailer 3.2. Do not reply to this message.

@@ -1,0 +1,90 @@
+Received: from WPA-WEB04.wpacorp.local ([10.20.3.68])
+ by gwia.wpacorp.local with ESMTP id 80060551C83C; Sun, 08 Nov 2026 15:09:37 -0600
+Message-ID: <034EF24E0200F3AC000A603E@gwia.wpacorp.example>
+Date: Sun, 08 Nov 2026 15:09:34 -0600 (CST)
+From: "WPA ErrorMailer" <errormailer@wpacorp.example>
+To: "Web Dev Errors" <webdev-errors@wpacorp.example>
+Subject: Production | Error: NullReferenceException in Waypoint.Portal
+X-Mailer: GroupWise Internet Agent 18.5.0
+X-Wpa-Host: WPA-WEB04
+X-Wpa-Environment: Production
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=_GWA9147ED8A4DAE405"
+
+This is a multi-part message in MIME format.
+
+--=_GWA9147ED8A4DAE405
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+An unhandled exception was logged by Waypoint.Portal.
+
+Environment   : Production
+Server        : WPA-WEB04
+Time          : 11/8/2026 3:09:34 PM
+Release       : 4.12.1+75aa65f
+Circuit       : G_VslafhmrCUJbKdxACNQQ
+RequestId     : 0HN26ITE5AFKG:00000013
+CorrelationId : b5c496b2-e529-4788-bbb6-0d998f5fa91e
+User          : jane.gaskins@mail.example
+Account       : 24877 Tammy Tolliver (homeowner)
+Page          : /samples/track/84507
+
+Exception:
+System.NullReferenceException: Object reference not set to an instance of a=
+n object.
+   at Waypoint.Portal.Components.Pages.Samples.Track.OnParametersSetAsync()=
+ in D:\a\1\s\src\Waypoint.Portal\Components\Pages\Samples\Track.razor:line =
+61
+   at Microsoft.AspNetCore.Components.ComponentBase.RunInitAndSetParameters=
+Async()
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTa=
+sk(Task taskToHandle, ComponentState owningComponentState)
+
+--=20
+Sent automatically by WPA ErrorMailer 3.2. Do not reply to this message.
+
+--=_GWA9147ED8A4DAE405
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><meta charset=3D"utf-8"></head><body style=3D"font-family:Helve=
+tica,Arial,sans-serif">
+<h3 style=3D"color:#CB333B;margin:0 0 8px">Production | Error in Waypoint.P=
+ortal</h3>
+<table style=3D"font-size:13px">
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Environment</td><td>=
+Production</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Server</td><td>WPA-W=
+EB04</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Time</td><td>11/8/20=
+26 3:09:34 PM</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Release</td><td>4.12=
+.1+75aa65f</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Circuit</td><td>G_Vs=
+lafhmrCUJbKdxACNQQ</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">RequestId</td><td>0H=
+N26ITE5AFKG:00000013</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">CorrelationId</td><t=
+d>b5c496b2-e529-4788-bbb6-0d998f5fa91e</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">User</td><td>jane.ga=
+skins@mail.example</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Account</td><td>2487=
+7 Tammy Tolliver (homeowner)</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Page</td><td>/sample=
+s/track/84507</td></tr>
+</table>
+<pre style=3D"font-size:12px;background:#F7F7F7;padding:8px">System.NullRef=
+erenceException: Object reference not set to an instance of an object.
+   at Waypoint.Portal.Components.Pages.Samples.Track.OnParametersSetAsync()=
+ in D:\a\1\s\src\Waypoint.Portal\Components\Pages\Samples\Track.razor:line =
+61
+   at Microsoft.AspNetCore.Components.ComponentBase.RunInitAndSetParameters=
+Async()
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTa=
+sk(Task taskToHandle, ComponentState owningComponentState)</pre>
+<p style=3D"color:#808080;font-size:11px">Sent automatically by WPA ErrorMa=
+iler 3.2.</p>
+</body></html>
+
+--=_GWA9147ED8A4DAE405--

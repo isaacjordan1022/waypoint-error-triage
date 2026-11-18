@@ -1,0 +1,401 @@
+account_number,account_name,account_type,parent_account_number,state,home_lab,portal_enabled,price_tier,created_date
+10006,Black Loam Acres,grower,,LA,MTN,false,Standard,2019-08-23
+10027,Quarles Brothers Ag,grower,,WI,CIL,true,Standard,2009-01-26
+10243,Dale Bramlett (homeowner),lawn_garden,,MO,AIA,false,Standard,2015-03-31
+10266,"Schoenfeld Brothers Ag, LLC",grower,,MS,MTN,true,Standard,2009-04-16
+10353,Peggy Kowalczyk (homeowner),lawn_garden,,TN,MTN,false,Standard,2013-09-06
+10380,"Crenshaw Brothers Ag, LLC",grower,,LA,MTN,true,Volume,2011-09-13
+10499,Elk Horn Farmers Cooperative,co_op,,SC,WNC,true,Volume,2014-10-17
+10514,Rattlesnake Bench Acres,grower,,NE,GNE,true,Volume,2013-04-08
+10950,Mesa Verde Ranch Ag Center,retailer,,IA,AIA,true,Retail Partner,2019-04-21
+10991,Dalton Family Farms,grower,16571,TN,MTN,true,Volume,2024-05-07
+11021,Quarles Farms,grower,,CO,GNE,false,Standard,2010-08-12
+11096,Marilyn Sandoval (homeowner),lawn_garden,,MO,AIA,false,Standard,2018-03-16
+11240,Dale Tolliver (homeowner),lawn_garden,,SD,GNE,true,Standard,2012-12-11
+11653,Fairchild's Feed & Seed,retailer,,IA,AIA,true,Retail Partner,2016-07-06
+11662,Marsh Hawk Farm Supply,retailer,,ID,GNE,true,Retail Partner,2018-07-20
+11729,Kenneth Hensley (homeowner),lawn_garden,,NV,ACA,false,Standard,2017-07-07
+11740,Fenwick Farms,grower,,WV,RVA,false,Volume,2012-02-12
+11762,"Thistle Down Ag Center, LLC",retailer,,MS,MTN,true,Retail Partner,2012-05-17
+12014,Fairchild Farms,grower,,VA,RVA,true,Standard,2024-03-12
+12045,Eckert Family Farms,grower,,MS,MTN,false,Standard,2014-10-26
+12141,Coyote Wash Acres,grower,16571,TN,MTN,true,Volume,2013-10-05
+12164,Stallworth & Sons,grower,11662,ID,GNE,true,Standard,2016-08-03
+12280,Bledsoe Family Farms,grower,,AR,MTN,true,Standard,2023-01-16
+12324,Halvorsen Farms,grower,30195,AZ,ACA,true,Standard,2011-08-13
+12334,Sandhill Growers Co-op,co_op,,KY,MTN,true,Volume,2009-12-21
+12350,Esposito Farms,grower,,AL,MTN,false,Volume,2024-12-17
+12552,"Bucklew & Sons, Inc.",grower,23974,WV,RVA,true,Volume,2021-12-31
+12558,Tammy Thibodeaux (homeowner),lawn_garden,,AL,MTN,true,Standard,2010-01-19
+12563,Paul Dalton (homeowner),lawn_garden,,NE,GNE,false,Standard,2012-02-10
+12573,Rountree Crop Consulting,consultant,,IA,AIA,true,Volume,2024-01-16
+12623,Charles Varga (homeowner),lawn_garden,,MS,MTN,true,Standard,2024-12-04
+12774,"Dobbins Brothers Ag, LLC",grower,,NY,LPA,true,Volume,2025-10-31
+12821,Lusk's Feed & Seed,retailer,,NC,WNC,true,Retail Partner,2013-03-29
+12898,Kenneth Prewitt (homeowner),lawn_garden,,CO,GNE,false,Standard,2025-10-04
+12925,"Hensley & Sons, Inc.",grower,,AZ,ACA,true,Standard,2017-01-24
+12966,Upchurch Brothers Ag,grower,,TX,MTN,true,Standard,2023-10-29
+13044,Eckert Soil Advisors,consultant,,AL,MTN,false,Volume,2024-08-03
+13187,Zellner Soil Advisors,consultant,,IN,CIL,true,Volume,2012-09-06
+13199,Laurel Valley Acres,grower,,AR,MTN,true,Standard,2018-12-21
+13354,Lone Cedar Ag Co-op,co_op,,LA,MTN,true,Volume,2011-09-20
+13372,Schoenfeld & Sons,grower,30195,AZ,ACA,true,Standard,2025-12-20
+13471,Voss's Feed & Seed,retailer,,MO,AIA,true,Retail Partner,2010-06-04
+13505,Merriweather Brothers Ag,grower,13471,MO,AIA,true,Standard,2025-10-03
+13563,Upchurch Farms,grower,,CO,GNE,true,Standard,2024-07-21
+13594,Lone Cedar Acres,grower,,SC,WNC,true,Volume,2023-05-28
+13699,Redmond Family Farms,grower,16571,TN,MTN,true,Standard,2022-01-08
+13708,Kenneth Merriweather (homeowner),lawn_garden,,KS,GNE,true,Standard,2015-05-13
+13746,Quail Run Acres,grower,,LA,MTN,true,Volume,2013-07-25
+13750,Indigo Plains Ag Co-op,co_op,,NV,ACA,true,Volume,2023-04-30
+13855,Sandhill Cotton Gin & Farms,enterprise,,KY,MTN,true,Enterprise,2016-12-08
+14113,Huckaby Brothers Ag,grower,,CO,GNE,true,Standard,2016-03-05
+14174,"Strickland & Sons, Inc.",grower,21099,IA,AIA,true,Standard,2012-08-27
+14179,Rountree Family Farms,grower,,PA,LPA,false,Standard,2023-04-09
+14262,Maddox's Feed & Seed,retailer,,DE,LPA,true,Retail Partner,2011-12-24
+14318,Red Hollow Soil Advisors,consultant,,AL,MTN,true,Volume,2018-08-07
+14400,"Satterfield & Sons, Inc.",grower,,SC,WNC,true,Standard,2017-02-26
+14449,Jessup Brothers Ag,grower,,TX,MTN,true,Standard,2013-03-28
+14496,Dalton Brothers Ag,grower,,TX,MTN,true,Standard,2015-01-02
+14552,Yarbrough Family Farms,grower,,MD,LPA,true,Standard,2020-08-21
+14557,Bucklew & Sons,grower,,LA,MTN,true,Standard,2021-06-06
+14638,Laurel Valley Producers Cooperative,co_op,,MN,AIA,true,Volume,2010-06-01
+14655,Carol Deering (homeowner),lawn_garden,,VA,RVA,true,Standard,2013-07-28
+14709,Saddle Gap Precision Ag,consultant,,MS,MTN,true,Volume,2009-08-15
+14718,Lacey Farms,grower,,DE,LPA,true,Volume,2015-02-03
+14807,Bramlett Family Farms,grower,,SC,WNC,false,Volume,2021-01-22
+14889,Zellner Farms,grower,,TN,MTN,true,Standard,2021-10-10
+14892,Three Forks Turf Farms,enterprise,,WI,CIL,true,Enterprise,2010-07-11
+15055,Barlow Farms,grower,,NE,GNE,false,Standard,2012-06-28
+15160,Bitterroot Flats Ag Co-op,co_op,,MO,AIA,true,Volume,2025-04-08
+15210,"Vance Brothers Ag, LLC",grower,29423,KS,GNE,true,Standard,2011-10-05
+15596,Hadley Farms,grower,36785,SC,WNC,true,Standard,2020-01-22
+15612,Marsh Hawk Producers Cooperative,co_op,,TX,MTN,true,Volume,2024-05-15
+15671,Vance Farms,grower,32916,DE,LPA,true,Standard,2021-02-18
+15682,Bitterroot Flats Acres,grower,,IA,AIA,true,Standard,2016-12-09
+15772,"Abernathy Brothers Ag, LLC",grower,,WV,RVA,true,Standard,2024-03-17
+15864,Turkey Ridge Ag Center,retailer,,MS,MTN,true,Retail Partner,2024-07-16
+15891,Hensley Brothers Ag,grower,,WI,CIL,false,Volume,2018-02-01
+16008,"Ransdell Brothers Ag, LLC",grower,16571,TN,MTN,true,Volume,2018-04-06
+16088,Louise Crenshaw (homeowner),lawn_garden,,WV,RVA,true,Standard,2012-07-20
+16167,Voss Farms,grower,,ID,GNE,false,Volume,2022-08-31
+16309,Peña Hermanos Farms,grower,,CA,ACA,true,Volume,2026-08-10
+16411,McAlister Farms,grower,,AZ,ACA,true,Standard,2017-11-24
+16492,Quail Run Farm Supply,retailer,,WV,RVA,true,Retail Partner,2024-05-17
+16571,Bramblewood Feed & Seed,retailer,,TN,MTN,true,Retail Partner,2016-12-01
+16739,Oak Run Acres,grower,,IL,CIL,true,Standard,2021-04-20
+16769,Bitterroot Flats Farmers Cooperative,co_op,,IN,CIL,true,Volume,2019-04-24
+16823,"Kinney & Sons, Inc.",grower,32134,NE,GNE,true,Volume,2018-01-23
+16921,"Bucklew Brothers Ag, LLC",grower,,CO,GNE,true,Standard,2016-09-28
+17130,Marchetti Family Farms,grower,,WI,CIL,false,Standard,2016-02-18
+17333,Prewitt Precision Ag,consultant,,MD,LPA,true,Volume,2018-03-15
+17397,Susan Marchetti (homeowner),lawn_garden,,NV,ACA,false,Standard,2022-12-03
+17592,Upchurch Crop Consulting,consultant,,ID,GNE,true,Volume,2026-04-02
+17708,Tolliver Brothers Ag,grower,,MO,AIA,false,Standard,2013-09-15
+17738,Turkey Ridge Acres,grower,16492,WV,RVA,true,Volume,2019-05-04
+17757,Carol Tolliver (homeowner),lawn_garden,,MO,AIA,true,Standard,2010-03-17
+17817,Sandoval Brothers Ag,grower,24537,MO,AIA,true,Standard,2017-01-18
+17985,Big Muddy Acres,grower,20238,IL,CIL,true,Standard,2011-05-18
+18022,Grand Prairie Ag Co-op,co_op,,TN,MTN,true,Volume,2011-02-23
+18035,William Voss (homeowner),lawn_garden,,AR,MTN,true,Standard,2023-03-12
+18455,McAlister Precision Ag,consultant,,AR,MTN,true,Volume,2018-02-28
+18822,Gary Barlow (homeowner),lawn_garden,,MN,AIA,true,Standard,2025-07-11
+18881,Long Meadow Growers Co-op,co_op,,NE,GNE,true,Volume,2022-09-17
+18934,Juniper Draw Cattle Co.,enterprise,,MD,LPA,true,Enterprise,2022-02-07
+18966,Copper Creek Growers Co-op,co_op,,KS,GNE,true,Volume,2023-04-25
+19065,Kestrel Bend Orchards,enterprise,,TX,MTN,true,Enterprise,2014-08-27
+19156,Michael Fenwick (homeowner),lawn_garden,,TN,MTN,false,Standard,2023-10-18
+19247,"Lacey & Sons, Inc.",grower,,PA,LPA,true,Volume,2016-03-07
+19249,Mosley Family Farms,grower,13471,MO,AIA,true,Standard,2025-10-27
+19282,Mesa Verde Ranch Ag Co-op,co_op,,TN,MTN,true,Volume,2023-08-15
+19390,Prairie Hollow Potato Co.,enterprise,,WI,CIL,true,Enterprise,2025-07-16
+19452,"Marchetti Brothers Ag, LLC",grower,,NC,WNC,true,Standard,2019-10-09
+19551,Gaskins Farms,grower,,NV,ACA,false,Volume,2019-08-26
+19639,Fairchild Family Farms,grower,,IA,AIA,true,Standard,2013-01-30
+19821,Coker Brothers Ag,grower,,TN,MTN,false,Standard,2016-07-24
+19899,Dunaway Family Farms,grower,24609,ID,GNE,true,Standard,2025-07-14
+19979,Tolliver Farms,grower,,KY,MTN,false,Standard,2015-12-06
+20093,Carver Family Farms,grower,,MO,AIA,false,Standard,2017-02-09
+20170,Black Loam Agronomy Services,consultant,,IA,AIA,true,Volume,2016-10-28
+20203,Hickory Knob Ag Co-op,co_op,,IL,CIL,true,Volume,2014-04-12
+20238,Yarbrough's Feed & Seed,retailer,,IL,CIL,true,Retail Partner,2025-09-21
+20239,Anne Lindqvist (homeowner),lawn_garden,,AR,MTN,true,Standard,2025-03-31
+20374,Marchetti Farms,grower,,IA,AIA,true,Standard,2026-03-17
+20424,Bramlett Brothers Ag,grower,,AL,MTN,false,Standard,2011-10-05
+20436,Cedar Bluff Producers Cooperative,co_op,,MS,MTN,true,Volume,2023-09-01
+20457,"Big Muddy Rice & Grain, Inc.",enterprise,,KY,MTN,true,Enterprise,2016-09-09
+20641,Ainsworth Farms,grower,16571,TN,MTN,true,Volume,2011-08-20
+20661,Abernathy Family Farms,grower,,KS,GNE,false,Volume,2009-01-17
+20678,Tallgrass Acres,grower,25425,MN,AIA,true,Standard,2012-11-07
+20728,Lindqvist Brothers Ag,grower,,IL,CIL,true,Standard,2013-12-03
+20824,"Garrity Brothers Ag, LLC",grower,16571,TN,MTN,true,Volume,2025-01-02
+20863,Michael Gaskins (homeowner),lawn_garden,,KS,GNE,true,Standard,2010-03-12
+20889,Turkey Ridge Farm Supply,retailer,,PA,LPA,true,Retail Partner,2012-08-27
+21099,Whitlock's Feed & Seed,retailer,,IA,AIA,true,Retail Partner,2012-01-24
+21164,Pardee Family Farms,grower,32916,DE,LPA,true,Volume,2024-09-19
+21213,Pendergast Farms,grower,37399,VA,RVA,true,Volume,2015-07-01
+21257,Tammy Quarles (homeowner),lawn_garden,,AL,MTN,false,Standard,2019-12-29
+21280,Holcomb Farms,grower,,IA,AIA,true,Standard,2020-05-19
+21423,"Yarbrough Brothers Ag, LLC",grower,21099,IA,AIA,true,Standard,2019-04-29
+21479,Sycamore Bottom Growers Co-op,co_op,,MN,AIA,true,Volume,2019-12-22
+21516,Merriweather & Sons,grower,16571,TN,MTN,true,Volume,2020-11-24
+21642,"Garrity & Sons, Inc.",grower,,IN,CIL,true,Standard,2017-12-29
+21653,Oakes's Feed & Seed,retailer,,NV,ACA,true,Retail Partner,2019-08-08
+21771,Goodlow Farms,grower,,MN,AIA,false,Standard,2024-01-16
+21805,"Huckaby & Sons, Inc.",grower,,IN,CIL,true,Standard,2017-03-05
+21909,Fenwick Precision Ag,consultant,,MN,AIA,true,Volume,2024-05-15
+22024,Brian Pendergast (homeowner),lawn_garden,,SD,GNE,false,Standard,2009-05-13
+22077,Jose Whitlock (homeowner),lawn_garden,,NC,WNC,false,Standard,2011-10-17
+22098,Maddox Farms,grower,,TN,MTN,true,Standard,2010-06-11
+22416,"Whitlock & Sons, Inc.",grower,,MD,LPA,false,Standard,2023-12-25
+22503,Marchetti & Sons,grower,,MN,AIA,true,Volume,2023-07-13
+22543,Lacey Family Farms,grower,,MS,MTN,true,Standard,2015-09-22
+22569,Stallworth's Feed & Seed,retailer,,MN,AIA,true,Retail Partner,2010-06-22
+22576,"Talbert Brothers Ag, LLC",grower,24609,ID,GNE,true,Standard,2012-02-05
+22602,Wakefield Farms,grower,,CO,GNE,true,Standard,2016-12-24
+22606,"McAlister Brothers Ag, LLC",grower,,IL,CIL,true,Standard,2011-02-10
+22778,"Wakefield Brothers Ag, LLC",grower,,CO,GNE,true,Standard,2017-12-15
+22842,Hensley's Feed & Seed,retailer,,PA,LPA,true,Retail Partner,2016-12-02
+22847,"Harlow Brothers Ag, LLC",grower,16571,TN,MTN,true,Standard,2013-09-20
+22919,Pine Flat Acres,grower,,IL,CIL,true,Standard,2010-06-05
+23133,Varga & Sons,grower,22569,MN,AIA,true,Standard,2016-09-17
+23244,Hadley Family Farms,grower,,MN,AIA,true,Standard,2014-11-11
+23293,Halvorsen Family Farms,grower,20238,IL,CIL,true,Volume,2014-01-11
+23297,Jessup Farms,grower,,ID,GNE,true,Standard,2016-02-04
+23304,"Dalton & Sons, Inc.",grower,,AL,MTN,true,Volume,2012-08-30
+23462,Scott Merriweather (homeowner),lawn_garden,,IN,CIL,false,Standard,2024-02-12
+23547,Dobbins Family Farms,grower,13471,MO,AIA,true,Standard,2012-07-04
+23626,Holcomb Family Farms,grower,,AR,MTN,true,Standard,2010-09-17
+23671,Heron Lake Acres,grower,,AL,MTN,false,Volume,2020-02-12
+23897,Garrity & Sons,grower,,IN,CIL,true,Standard,2025-04-11
+23918,Wanda Eckert (homeowner),lawn_garden,,AZ,ACA,true,Standard,2021-01-01
+23949,Long Meadow Acres,grower,,LA,MTN,true,Standard,2022-07-21
+23974,Saddle Gap Farm Supply,retailer,,WV,RVA,true,Retail Partner,2015-10-28
+24127,Oakes & Sons,grower,29423,KS,GNE,true,Standard,2025-09-23
+24146,Strickland Family Farms,grower,,TN,MTN,true,Standard,2020-07-24
+24245,Carver Farms,grower,,AL,MTN,true,Standard,2023-05-27
+24260,"Lindqvist Brothers Ag, LLC",grower,,SC,WNC,true,Standard,2012-04-13
+24265,Esposito Family Farms,grower,11662,ID,GNE,true,Standard,2024-03-07
+24310,"Upchurch & Sons, Inc.",grower,,LA,MTN,true,Standard,2012-06-29
+24454,"Coyote Wash Citrus, LLC",enterprise,,AL,MTN,true,Enterprise,2019-09-07
+24537,Iron Bridge Ag Center,retailer,,MO,AIA,true,Retail Partner,2009-04-29
+24588,Garrity Farms,grower,,MS,MTN,true,Volume,2025-07-28
+24609,Mosley's Feed & Seed,retailer,,ID,GNE,true,Retail Partner,2010-12-26
+24652,Kinney Farms,grower,,IN,CIL,true,Standard,2019-02-12
+24747,"Faircloth Brothers Ag, LLC",grower,,SC,WNC,true,Standard,2024-12-26
+24843,Wakefield Family Farms,grower,,CA,ACA,true,Standard,2023-10-18
+24853,Ostrowski Farms,grower,16571,TN,MTN,true,Standard,2026-07-18
+24877,Tammy Tolliver (homeowner),lawn_garden,,AL,MTN,true,Standard,2010-07-17
+24889,Pendergast Family Farms,grower,,SC,WNC,true,Standard,2014-05-17
+24928,Esposito Precision Ag,consultant,,MN,AIA,true,Volume,2019-09-04
+24943,"Yarbrough & Sons, Inc.",grower,,AR,MTN,true,Standard,2013-01-29
+25105,"Rountree & Sons, Inc.",grower,24609,ID,GNE,true,Standard,2011-08-16
+25113,"Halvorsen Brothers Ag, LLC",grower,16571,TN,MTN,true,Standard,2025-07-12
+25168,"Merriweather Brothers Ag, LLC",grower,,KY,MTN,true,Standard,2024-04-19
+25235,Matthew Brandvold (homeowner),lawn_garden,,ID,GNE,false,Standard,2009-02-11
+25250,Fox Hollow Agronomy Services,consultant,,NV,ACA,true,Volume,2019-08-30
+25259,Lusk Soil Advisors,consultant,,CO,GNE,true,Volume,2020-07-14
+25344,Sycamore Bottom Soil Advisors,consultant,,PA,LPA,true,Volume,2018-08-27
+25363,Paul Satterfield (homeowner),lawn_garden,,MN,AIA,true,Standard,2011-12-02
+25375,Anne Kowalczyk (homeowner),lawn_garden,,NC,WNC,true,Standard,2020-04-06
+25418,Kowalczyk Agronomy Services,consultant,,AZ,ACA,true,Volume,2014-08-21
+25425,Red Hollow Ag Center,retailer,,MN,AIA,true,Retail Partner,2009-01-12
+25481,Peggy Sandoval (homeowner),lawn_garden,,AL,MTN,true,Standard,2022-07-19
+25560,Crenshaw Family Farms,grower,,CO,GNE,true,Standard,2011-01-09
+25575,Sandoval & Sons,grower,16571,TN,MTN,true,Standard,2014-04-08
+25684,"Oakes Brothers Ag, LLC",grower,16571,TN,MTN,true,Volume,2017-02-01
+25778,Frank Jessup (homeowner),lawn_garden,,NV,ACA,false,Standard,2014-06-05
+25806,Mosley Farms,grower,29423,KS,GNE,true,Standard,2020-04-30
+25835,Robert Talbert (homeowner),lawn_garden,,PA,LPA,true,Standard,2023-07-28
+25945,Beckett Family Farms,grower,,SC,WNC,true,Standard,2018-02-21
+25948,Schoenfeld Family Farms,grower,,LA,MTN,true,Standard,2023-03-11
+25974,Hadley & Sons,grower,16571,TN,MTN,true,Standard,2013-01-17
+26197,Huckaby Farms,grower,,MD,LPA,false,Volume,2017-06-07
+26323,Jeffrey Childers (homeowner),lawn_garden,,MO,AIA,false,Standard,2009-09-14
+26440,Pamela Crenshaw (homeowner),lawn_garden,,ID,GNE,false,Standard,2009-03-23
+26644,Schoenfeld Farms,grower,39599,NY,LPA,true,Standard,2023-12-05
+26692,Prewitt Farms,grower,,NV,ACA,true,Volume,2010-01-03
+26725,Iron Bridge Acres,grower,,SD,GNE,true,Volume,2024-11-27
+26798,Thomas Maddox (homeowner),lawn_garden,,IA,AIA,true,Standard,2011-05-28
+26844,Clearwater Bend Producers Cooperative,co_op,,LA,MTN,true,Volume,2019-09-22
+26939,Bonnie Halvorsen (homeowner),lawn_garden,,MN,AIA,true,Standard,2020-08-14
+27149,Irene Whitlock (homeowner),lawn_garden,,CA,ACA,false,Standard,2016-10-26
+27249,Daniel Beckett (homeowner),lawn_garden,,PA,LPA,false,Standard,2010-11-11
+27408,"Coker & Sons, Inc.",grower,,KS,GNE,false,Volume,2018-05-21
+27441,Tallgrass Valley Produce Co.,enterprise,,MN,AIA,true,Enterprise,2012-05-23
+27457,Prairie Rose Acres,grower,36785,SC,WNC,true,Volume,2022-04-04
+27481,Childers Soil Advisors,consultant,,LA,MTN,true,Volume,2022-04-22
+27531,Richard Sandoval (homeowner),lawn_garden,,TX,MTN,false,Standard,2024-12-15
+27668,Tammy Prewitt (homeowner),lawn_garden,,IN,CIL,false,Standard,2015-10-02
+27713,Grand Prairie Ag Center,retailer,,ID,GNE,true,Retail Partner,2026-09-16
+27777,Juniper Draw Producers Cooperative,co_op,,AZ,ACA,true,Volume,2023-02-23
+27843,Lacey Brothers Ag,grower,32134,NE,GNE,true,Volume,2018-06-18
+27862,"Dunaway Brothers Ag, LLC",grower,,LA,MTN,true,Standard,2022-03-17
+27896,Joseph Bramlett (homeowner),lawn_garden,,KS,GNE,true,Standard,2019-01-29
+27955,Shady Grove Acres,grower,11762,MS,MTN,true,Standard,2012-07-10
+27985,Sandoval Farms,grower,,CO,GNE,false,Standard,2022-09-13
+28001,Tallgrass Growers Co-op,co_op,,AZ,ACA,true,Volume,2009-12-17
+28089,Deering Farms,grower,,IL,CIL,false,Standard,2012-08-13
+28189,Vance Brothers Ag,grower,,PA,LPA,true,Volume,2009-09-11
+28200,Abernathy Farms,grower,,IL,CIL,true,Standard,2020-02-12
+28223,Beckett Farms,grower,39599,NY,LPA,true,Standard,2009-04-24
+28337,Turkey Ridge Growers Co-op,co_op,,DE,LPA,true,Volume,2020-03-01
+28351,Whitlock Brothers Ag,grower,,VA,RVA,false,Standard,2020-03-03
+28586,Hadley Brothers Ag,grower,36785,SC,WNC,true,Volume,2018-05-09
+28605,Esposito Soil Advisors,consultant,,IN,CIL,true,Volume,2015-06-20
+28617,Anne Oakes (homeowner),lawn_garden,,SC,WNC,false,Standard,2024-06-11
+28686,Cottrell Family Farms,grower,,KY,MTN,true,Standard,2016-05-03
+28807,Eric Jessup (homeowner),lawn_garden,,NC,WNC,true,Standard,2017-07-31
+28811,Coyote Wash Farmers Cooperative,co_op,,IN,CIL,true,Volume,2012-11-30
+28815,"Quarles & Sons, Inc.",grower,,CA,ACA,true,Standard,2012-03-13
+28831,Shackleford Family Farms,grower,24537,MO,AIA,true,Volume,2010-08-03
+28885,Nicole Rountree (homeowner),lawn_garden,,IA,AIA,true,Standard,2017-06-20
+28937,Fox Hollow Acres,grower,,NV,ACA,false,Volume,2015-07-20
+28993,Sandra Bledsoe (homeowner),lawn_garden,,VA,RVA,true,Standard,2022-11-11
+29014,Linda Halvorsen (homeowner),lawn_garden,,AL,MTN,false,Standard,2009-05-08
+29030,"Carver & Sons, Inc.",grower,,MD,LPA,true,Standard,2020-08-21
+29094,Oakes Farms,grower,,WV,RVA,true,Volume,2021-01-18
+29338,Gaskins Family Farms,grower,,AL,MTN,true,Volume,2024-01-01
+29350,Oakes Family Farms,grower,37399,VA,RVA,true,Standard,2012-08-20
+29364,Sandoval Family Farms,grower,24537,MO,AIA,true,Standard,2014-10-29
+29404,Ogletree Brothers Ag,grower,,ID,GNE,true,Standard,2009-12-09
+29423,Bledsoe's Feed & Seed,retailer,,KS,GNE,true,Retail Partner,2021-05-11
+29532,Red Hollow Acres,grower,,VA,RVA,true,Volume,2020-06-12
+29533,Tallgrass Ag Center,retailer,,ID,GNE,true,Retail Partner,2011-09-23
+29543,Huckaby Family Farms,grower,,AL,MTN,true,Standard,2025-04-03
+29603,Ransdell Brothers Ag,grower,,AL,MTN,false,Standard,2016-08-23
+29805,"Goodlow & Sons, Inc.",grower,,NC,WNC,true,Standard,2010-09-24
+29806,Faircloth Brothers Ag,grower,39205,SD,GNE,true,Volume,2025-06-21
+29810,William Prewitt (homeowner),lawn_garden,,NY,LPA,true,Standard,2016-05-16
+29990,Angela Kinney (homeowner),lawn_garden,,TX,MTN,false,Standard,2015-12-28
+30037,"Fenwick Brothers Ag, LLC",grower,,NV,ACA,false,Standard,2018-03-03
+30088,Denise Carver (homeowner),lawn_garden,,VA,RVA,true,Standard,2010-03-07
+30095,Prairie Rose Growers Co-op,co_op,,AL,MTN,true,Volume,2017-06-04
+30171,Huckaby & Sons,grower,,IA,AIA,true,Standard,2014-08-03
+30195,Saddle Gap Ag Center,retailer,,AZ,ACA,true,Retail Partner,2015-10-10
+30215,Black Loam Crop Consulting,consultant,,KS,GNE,false,Volume,2011-09-29
+30344,"Redmond & Sons, Inc.",grower,25425,MN,AIA,true,Volume,2014-01-10
+30412,Grand Prairie Growers Co-op,co_op,,KY,MTN,true,Volume,2013-11-25
+30422,Grand Prairie Acres,grower,,WI,CIL,true,Standard,2018-07-03
+30487,Fenwick Brothers Ag,grower,,WI,CIL,false,Volume,2025-01-04
+30626,Ainsworth's Feed & Seed,retailer,,TN,MTN,true,Retail Partner,2023-05-21
+30665,Kathy Crenshaw (homeowner),lawn_garden,,DE,LPA,true,Standard,2017-01-09
+30764,Peggy Carver (homeowner),lawn_garden,,AZ,ACA,true,Standard,2020-12-19
+30844,Goodlow Family Farms,grower,,MD,LPA,false,Standard,2024-10-29
+31045,Fenwick Family Farms,grower,,KY,MTN,true,Volume,2015-01-01
+31116,Wolf Creek Agronomy Services,consultant,,LA,MTN,true,Volume,2021-09-28
+31135,Satterfield Farms,grower,,TN,MTN,true,Volume,2011-08-02
+31246,Nordquist Farms,grower,,WI,CIL,true,Volume,2026-09-27
+31281,Upchurch Family Farms,grower,20889,PA,LPA,true,Volume,2012-04-04
+31558,Dunaway Brothers Ag,grower,,IA,AIA,false,Standard,2013-12-02
+31632,Dunaway Farms,grower,,CA,ACA,true,Standard,2025-02-14
+31655,Shackleford Brothers Ag,grower,,MN,AIA,false,Volume,2021-11-15
+31708,Shackleford Farms,grower,,MN,AIA,true,Standard,2023-10-01
+31712,Cottrell Farms,grower,25425,MN,AIA,true,Volume,2021-07-19
+31749,Nicole Ainsworth (homeowner),lawn_garden,,IN,CIL,true,Standard,2022-07-01
+31796,Bluestem Acres,grower,16571,TN,MTN,true,Volume,2018-12-12
+31912,Anne Prewitt (homeowner),lawn_garden,,WI,CIL,false,Standard,2024-04-20
+31941,Bucklew Farms,grower,20889,PA,LPA,true,Volume,2009-06-02
+31956,"Childers & Sons, Inc.",grower,,SC,WNC,true,Volume,2023-03-17
+31983,Pardee Crop Consulting,consultant,,WV,RVA,true,Volume,2024-12-03
+31991,Heron Lake Seed Corn Co.,enterprise,,TX,MTN,true,Enterprise,2009-04-08
+32134,Willow Fork Farm Supply,retailer,,NE,GNE,true,Retail Partner,2017-03-14
+32267,Yarbrough Brothers Ag,grower,,NV,ACA,true,Volume,2016-02-18
+32331,Crenshaw & Sons,grower,,TN,MTN,true,Volume,2025-08-18
+32415,Robert Oakes (homeowner),lawn_garden,,MN,AIA,true,Standard,2014-04-21
+32428,Red Hollow Agronomy Services,consultant,,LA,MTN,true,Volume,2022-04-17
+32462,"Barlow Brothers Ag, LLC",grower,,TX,MTN,true,Standard,2014-03-25
+32614,Kestrel Bend Ag Center,retailer,,NC,WNC,true,Retail Partner,2016-09-26
+32626,Kathryn Holcomb (homeowner),lawn_garden,,DE,LPA,false,Standard,2023-04-10
+32742,Cedar Bluff Acres,grower,29533,ID,GNE,true,Volume,2016-08-23
+32745,Faircloth Family Farms,grower,27713,ID,GNE,true,Standard,2019-10-17
+32786,"Bledsoe & Sons, Inc.",grower,,TX,MTN,true,Volume,2018-06-12
+32891,Red Hollow Precision Ag,consultant,,MO,AIA,true,Volume,2015-10-17
+32916,Deering's Feed & Seed,retailer,,DE,LPA,true,Retail Partner,2018-04-17
+32924,"Dunaway & Sons, Inc.",grower,16571,TN,MTN,true,Volume,2010-06-28
+33010,Three Forks Acres,grower,,WI,CIL,true,Volume,2012-11-14
+33047,Wilcoxen Farms,grower,,AL,MTN,false,Standard,2025-07-31
+33080,Pine Flat Ag Co-op,co_op,,CA,ACA,true,Volume,2022-04-21
+33090,Bramlett's Feed & Seed,retailer,,AR,MTN,true,Retail Partner,2013-02-20
+33097,Irene Thibodeaux (homeowner),lawn_garden,,MN,AIA,true,Standard,2009-09-25
+33272,Black Loam Soil Advisors,consultant,,IN,CIL,true,Volume,2024-06-30
+33323,"Gaskins & Sons, Inc.",grower,,TN,MTN,true,Volume,2026-07-23
+33327,Saddle Gap Acres,grower,,MS,MTN,false,Standard,2014-09-25
+33335,Rhett Harlow (homeowner),lawn_garden,,AL,MTN,false,Standard,2019-09-01
+33360,Harlow Crop Consulting,consultant,,SC,WNC,true,Volume,2016-08-19
+33405,Elk Horn Acres,grower,16492,WV,RVA,true,Standard,2020-06-15
+33520,Marchetti Brothers Ag,grower,,CA,ACA,true,Volume,2010-03-19
+33636,Lindqvist Farms,grower,,WI,CIL,true,Volume,2014-10-22
+33926,Jeffrey Bledsoe (homeowner),lawn_garden,,LA,MTN,false,Standard,2010-10-08
+33950,Brian Voss (homeowner),lawn_garden,,AR,MTN,false,Standard,2010-11-01
+33963,Paul Pardee (homeowner),lawn_garden,,MO,AIA,true,Standard,2014-05-18
+34045,Clint Upchurch (homeowner),lawn_garden,,MN,AIA,true,Standard,2020-01-27
+34227,"Prewitt Brothers Ag, LLC",grower,,CA,ACA,true,Standard,2009-07-17
+34303,Timothy Lacey (homeowner),lawn_garden,,AR,MTN,false,Standard,2009-03-20
+34595,Frank Dobbins (homeowner),lawn_garden,,TX,MTN,false,Standard,2013-08-31
+34739,Crenshaw Farms,grower,,IL,CIL,true,Standard,2014-02-09
+34764,Coker Crop Consulting,consultant,,NY,LPA,true,Volume,2021-10-16
+34807,Garrity Family Farms,grower,,NC,WNC,true,Standard,2012-02-13
+34851,Wakefield Crop Consulting,consultant,,MN,AIA,false,Volume,2018-05-12
+35048,Satterfield Precision Ag,consultant,,ID,GNE,true,Volume,2019-08-25
+35116,Oakes Soil Advisors,consultant,,IA,AIA,false,Volume,2013-10-20
+35163,"Dobbins & Sons, Inc.",grower,11662,ID,GNE,true,Standard,2026-03-26
+35275,Mesa Verde Ranch Acres,grower,,AZ,ACA,false,Volume,2023-08-14
+35322,Saddle Gap Vineyards,enterprise,,DE,LPA,true,Enterprise,2014-05-04
+35510,Nicole Barlow (homeowner),lawn_garden,,IA,AIA,false,Standard,2010-05-09
+35522,Sara Shackleford (homeowner),lawn_garden,,LA,MTN,false,Standard,2013-09-19
+35700,Kestrel Bend Acres,grower,20238,IL,CIL,true,Standard,2012-04-15
+35799,Harlow Farms,grower,11762,MS,MTN,true,Standard,2019-08-14
+35846,Quarles Family Farms,grower,16571,TN,MTN,true,Standard,2024-06-02
+35851,"Childers Brothers Ag, LLC",grower,,TX,MTN,true,Standard,2017-02-16
+35966,Stallworth Family Farms,grower,23974,WV,RVA,true,Standard,2015-08-13
+36029,Sycamore Bottom Acres,grower,,NC,WNC,true,Standard,2018-01-08
+36108,Pardee Farms,grower,13471,MO,AIA,true,Standard,2010-01-06
+36152,David Stallworth (homeowner),lawn_garden,,IN,CIL,true,Standard,2022-09-26
+36291,Zellner Crop Consulting,consultant,,PA,LPA,true,Volume,2014-08-16
+36345,Willow Fork Farmers Cooperative,co_op,,IN,CIL,true,Volume,2022-01-20
+36409,"Sandoval & Sons, Inc.",grower,,NV,ACA,true,Standard,2012-03-07
+36519,Fairchild Precision Ag,consultant,,CO,GNE,true,Volume,2026-02-11
+36536,Marsh Hawk Acres,grower,,DE,LPA,true,Standard,2022-01-03
+36635,Tallgrass Precision Ag,consultant,,WV,RVA,true,Volume,2026-02-26
+36670,Thistle Down Acres,grower,29423,KS,GNE,true,Standard,2025-04-07
+36675,Coker Farms,grower,,WI,CIL,true,Standard,2011-06-04
+36772,Zellner Brothers Ag,grower,,TX,MTN,true,Standard,2011-11-02
+36785,Crenshaw's Feed & Seed,retailer,,SC,WNC,true,Retail Partner,2015-07-03
+36789,Pardee Brothers Ag,grower,20889,PA,LPA,true,Standard,2012-05-02
+36865,Brandvold Brothers Ag,grower,,AZ,ACA,true,Standard,2017-04-10
+36872,"Brandvold Brothers Ag, LLC",grower,,NY,LPA,true,Volume,2020-07-31
+36894,Deering Brothers Ag,grower,,MS,MTN,true,Standard,2025-11-23
+36936,Kimbrough Farms,grower,,NV,ACA,false,Volume,2022-08-05
+37399,Prewitt's Feed & Seed,retailer,,VA,RVA,true,Retail Partner,2017-11-06
+37418,"Varga & Sons, Inc.",grower,,KY,MTN,false,Volume,2014-04-22
+37523,Ransdell & Sons,grower,,PA,LPA,true,Standard,2024-11-27
+37634,Dalton & Sons,grower,,NC,WNC,true,Standard,2018-08-31
+37714,Whitlock Farms,grower,13471,MO,AIA,true,Standard,2019-07-20
+37748,Robert Tolliver (homeowner),lawn_garden,,KS,GNE,true,Standard,2013-09-29
+37775,"Hensley Brothers Ag, LLC",grower,,IA,AIA,true,Volume,2013-03-27
+37934,Thibodeaux Farms,grower,,CO,GNE,true,Standard,2011-03-05
+38159,Daniel Oakes (homeowner),lawn_garden,,WI,CIL,true,Standard,2011-05-28
+38185,Sorensen Farms,grower,,MO,AIA,true,Standard,2011-05-02
+38206,Shackleford & Sons,grower,16571,TN,MTN,true,Standard,2013-01-30
+38216,Nordquist Agronomy Services,consultant,,CA,ACA,false,Volume,2026-09-17
+38221,Ogletree Farms,grower,,KY,MTN,false,Standard,2017-09-15
+38366,"Stallworth Brothers Ag, LLC",grower,,VA,RVA,false,Volume,2025-07-03
+38597,"Hadley Brothers Ag, LLC",grower,,AL,MTN,true,Standard,2015-02-22
+38751,Vance Family Farms,grower,,LA,MTN,true,Standard,2024-02-21
+38914,Hensley Farms,grower,16571,TN,MTN,true,Standard,2013-06-13
+38996,Mosley Brothers Ag,grower,,IN,CIL,true,Standard,2023-05-07
+39073,"Pendergast & Sons, Inc.",grower,,MS,MTN,false,Standard,2014-04-05
+39160,Anthony Kimbrough (homeowner),lawn_garden,,IN,CIL,false,Standard,2014-08-11
+39205,Ogletree's Feed & Seed,retailer,,SD,GNE,true,Retail Partner,2024-10-28
+39237,Wakefield's Feed & Seed,retailer,,CO,GNE,true,Retail Partner,2017-09-09
+39280,Lusk Family Farms,grower,,WI,CIL,true,Standard,2020-12-11
+39350,Deering Crop Consulting,consultant,,IA,AIA,true,Volume,2017-02-25
+39526,"Wilcoxen Brothers Ag, LLC",grower,,KY,MTN,true,Standard,2017-06-05
+39597,"Holcomb & Sons, Inc.",grower,,SC,WNC,true,Standard,2015-02-15
+39599,Black Loam Farm Supply,retailer,,NY,LPA,true,Retail Partner,2010-10-26
+39608,Scott Voss (homeowner),lawn_garden,,TX,MTN,false,Standard,2025-11-21
+39689,Jacqueline Sandoval (homeowner),lawn_garden,,AZ,ACA,true,Standard,2020-11-28
+39912,Schoenfeld Agronomy Services,consultant,,KS,GNE,true,Volume,2019-08-30
+39923,Sandhill Acres,grower,,MO,AIA,true,Standard,2010-07-06
+39986,Castillo Brothers Ag,grower,,IA,AIA,false,Standard,2010-07-28

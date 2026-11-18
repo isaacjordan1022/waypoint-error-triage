@@ -1,0 +1,52 @@
+Received: from WPA-WEB03.wpacorp.local ([10.20.3.201])
+ by gwia.wpacorp.local with ESMTP id 42DE8E3B417A; Tue, 27 Oct 2026 07:58:17 -0500
+Message-ID: <86D75E1B0200D38D000B6885@gwia.wpacorp.example>
+Date: Tue, 27 Oct 2026 07:58:16 CDT
+From: "WPA ErrorMailer" <errormailer@wpacorp.example>
+To: "Web Dev Errors" <webdev-errors@wpacorp.example>
+Subject: Production | Error: SqlException in Waypoint.Portal
+X-Mailer: GroupWise Internet Agent 18.5.0
+X-Wpa-Host: WPA-WEB03
+X-Wpa-Environment: Production
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+An unhandled exception was logged by Waypoint.Portal.
+
+Environment   : Production
+Server        : WPA-WEB03
+Time          : 10/27/2026 7:58:16 AM
+Release       : 4.11.3+dd24a2e
+Circuit       : gJ5Qk3XbHwLNF6Iv019q1w
+RequestId     : 0HNO03ML48PUR:00000011
+CorrelationId : 9a06055b-f0cd-4a27-8165-0e8aa39f2d8a
+User          : dgaskins@grandprairiegrowerscoo.example
+Account       : 30412 Grand Prairie Growers Co-op
+Page          : /submit/batch
+Batch         : 24478 (230 samples)
+
+Exception:
+Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID=
+ 129) was deadlocked on lock resources with another process and has been ch=
+osen as the deadlock victim. Rerun the transaction.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception=
+, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParser=
+StateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, Sq=
+lCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulk=
+CopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsync=
+Result asyncResult, Boolean isInternal, String endMethod)
+   at Waypoint.Portal.Data.SampleStatusRepository.UpdateBatchAsync(Int32 ba=
+tchId, IReadOnlyList`1 labNumbers, CancellationToken ct) in D:\a\1\s\src\Wa=
+ypoint.Portal\Data\SampleStatusRepository.cs:line 97
+   at Waypoint.Portal.Services.SubmissionService.SubmitBatchAsync(Submissio=
+nBatch batch, CancellationToken ct) in D:\a\1\s\src\Waypoint.Portal\Service=
+s\SubmissionService.cs:line 211
+ClientConnectionId:ea829a85-aa84-4534-91c7-35e7a6d7860b
+Error Number:1205,State:51,Class:13
+
+--=20
+Sent automatically by WPA ErrorMailer 3.2. Do not reply to this message.

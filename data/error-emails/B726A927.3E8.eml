@@ -1,0 +1,110 @@
+Received: from WPA-WEB03.wpacorp.local ([10.20.3.201])
+ by gwia.wpacorp.local with ESMTP id 0C748122E261; Thu, 12 Nov 2026 13:03:02 -0600
+Message-ID: <7C2702990200D83F00059216@gwia.wpacorp.example>
+Date: Thu, 12 Nov 2026 13:02:58 -0600 (CST)
+From: "WPA ErrorMailer" <errormailer@wpacorp.example>
+To: "Web Dev Errors" <webdev-errors@wpacorp.example>
+Subject: Production | Error: NullReferenceException in Waypoint.Portal
+X-Mailer: GroupWise Internet Agent 18.5.0
+X-Wpa-Host: WPA-WEB03
+X-Wpa-Environment: Production
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=_GW7F0E38DE1EF7F63D"
+
+This is a multi-part message in MIME format.
+
+--=_GW7F0E38DE1EF7F63D
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+An unhandled exception was logged by Waypoint.Portal.
+
+Environment   : Production
+Server        : WPA-WEB03
+Time          : 11/12/2026 1:02:58 PM
+Release       : 4.12.1+75aa65f
+Circuit       : uU6yCgIpZzDgg4-RBTCP3w
+RequestId     : 0HN9NOCK4VMS3:00000018
+CorrelationId : 0aa3ac8a-2e5e-4e54-908c-d4b134336fd9
+User          : ebucklew@bucklewandsons.example
+Account       : 14557 Bucklew & Sons
+Page          : /invoices/pay
+Invoice       : INV-2026-028258
+PO Number     : (none)
+
+Exception:
+System.NullReferenceException: Object reference not set to an instance of a=
+n object.
+   at Waypoint.Portal.Services.InvoiceService.<>c__DisplayClass15_0.<ApplyP=
+aymentAsync>b__0(InvoiceLine line) in D:\a\1\s\src\Waypoint.Portal\Services=
+\InvoiceService.cs:line 219
+   at System.Linq.Enumerable.Sum[TSource](IEnumerable`1 source, Func`2 sele=
+ctor)
+   at Waypoint.Portal.Services.InvoiceService.ApplyPaymentAsync(PaymentRequ=
+est request, CancellationToken ct) in D:\a\1\s\src\Waypoint.Portal\Services=
+\InvoiceService.cs:line 211
+   at Waypoint.Portal.Components.Pages.Invoices.Pay.SubmitPaymentAsync() in=
+ D:\a\1\s\src\Waypoint.Portal\Components\Pages\Invoices\Pay.razor:line 91
+   at Microsoft.AspNetCore.Components.ComponentBase.CallStateHasChangedOnAs=
+yncCompletion(Task task)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTa=
+sk(Task taskToHandle, ComponentState owningComponentState)
+
+--=20
+Sent automatically by WPA ErrorMailer 3.2. Do not reply to this message.
+
+--=_GW7F0E38DE1EF7F63D
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><meta charset=3D"utf-8"></head><body style=3D"font-family:Helve=
+tica,Arial,sans-serif">
+<h3 style=3D"color:#CB333B;margin:0 0 8px">Production | Error in Waypoint.P=
+ortal</h3>
+<table style=3D"font-size:13px">
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Environment</td><td>=
+Production</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Server</td><td>WPA-W=
+EB03</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Time</td><td>11/12/2=
+026 1:02:58 PM</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Release</td><td>4.12=
+.1+75aa65f</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Circuit</td><td>uU6y=
+CgIpZzDgg4-RBTCP3w</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">RequestId</td><td>0H=
+N9NOCK4VMS3:00000018</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">CorrelationId</td><t=
+d>0aa3ac8a-2e5e-4e54-908c-d4b134336fd9</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">User</td><td>ebuckle=
+w@bucklewandsons.example</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Account</td><td>1455=
+7 Bucklew &amp; Sons</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Page</td><td>/invoic=
+es/pay</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Invoice</td><td>INV-=
+2026-028258</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">PO Number</td><td>(n=
+one)</td></tr>
+</table>
+<pre style=3D"font-size:12px;background:#F7F7F7;padding:8px">System.NullRef=
+erenceException: Object reference not set to an instance of an object.
+   at Waypoint.Portal.Services.InvoiceService.&lt;&gt;c__DisplayClass15_0.&=
+lt;ApplyPaymentAsync&gt;b__0(InvoiceLine line) in D:\a\1\s\src\Waypoint.Por=
+tal\Services\InvoiceService.cs:line 219
+   at System.Linq.Enumerable.Sum[TSource](IEnumerable`1 source, Func`2 sele=
+ctor)
+   at Waypoint.Portal.Services.InvoiceService.ApplyPaymentAsync(PaymentRequ=
+est request, CancellationToken ct) in D:\a\1\s\src\Waypoint.Portal\Services=
+\InvoiceService.cs:line 211
+   at Waypoint.Portal.Components.Pages.Invoices.Pay.SubmitPaymentAsync() in=
+ D:\a\1\s\src\Waypoint.Portal\Components\Pages\Invoices\Pay.razor:line 91
+   at Microsoft.AspNetCore.Components.ComponentBase.CallStateHasChangedOnAs=
+yncCompletion(Task task)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTa=
+sk(Task taskToHandle, ComponentState owningComponentState)</pre>
+<p style=3D"color:#808080;font-size:11px">Sent automatically by WPA ErrorMa=
+iler 3.2.</p>
+</body></html>
+
+--=_GW7F0E38DE1EF7F63D--

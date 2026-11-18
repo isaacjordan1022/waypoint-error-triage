@@ -1,0 +1,92 @@
+Received: from WPA-INT01.wpacorp.local ([10.20.9.217])
+ by gwia.wpacorp.local with ESMTP id 98B78A28CDDB; Mon, 19 Oct 2026 08:00:41 -0500
+Message-ID: <B7F90AF2020089CB000DF81C@gwia.wpacorp.example>
+Date: Mon, 19 Oct 2026 09:00:37 -0400 (EDT)
+From: "WPA ErrorMailer" <errormailer@wpacorp.example>
+To: "Web Dev Errors" <webdev-errors@wpacorp.example>
+Subject: Production | Error: HttpRequestException in
+ Waypoint.Integrations.Ups
+X-Mailer: GroupWise Internet Agent 18.5.0
+X-Wpa-Host: WPA-INT01
+X-Wpa-Environment: Production
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=_GW68697BD5DF6DC9A7"
+
+This is a multi-part message in MIME format.
+
+--=_GW68697BD5DF6DC9A7
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+An unhandled exception was logged by Waypoint.Integrations.Ups.
+
+Environment   : Production
+Server        : WPA-INT01
+Time          : 10/19/2026 9:00:37 AM
+Release       : 2.3.0+fe2c9e4
+CorrelationId : 7383f5ed-92ff-4ec1-8e0f-e7afb3a5d2cb
+Account       : 28337 Turkey Ridge Growers Co-op
+Batch         : 18162
+Shipment      : 1Z8GBRU80334837871
+
+Exception:
+System.Net.Http.HttpRequestException: Response status code does not indicat=
+e success: 429 (Too Many Requests).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Waypoint.Integrations.Ups.UpsShippingClient.CreateLabelAsync(LabelReq=
+uest request, CancellationToken ct) in C:\build\ups\src\Waypoint.Integratio=
+ns.Ups\UpsShippingClient.cs:line 141
+   at Waypoint.Integrations.Ups.LabelBatchService.ProcessBatchAsync(Int32 b=
+atchId, CancellationToken ct) in C:\build\ups\src\Waypoint.Integrations.Ups=
+\LabelBatchService.cs:line 63
+   at Waypoint.Integrations.Ups.Jobs.LabelQueueWorker.ExecuteAsync(Cancella=
+tionToken stoppingToken) in C:\build\ups\src\Waypoint.Integrations.Ups\Jobs=
+\LabelQueueWorker.cs:line 38
+
+--=20
+Sent automatically by WPA ErrorMailer 3.2. Do not reply to this message.
+
+--=_GW68697BD5DF6DC9A7
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><meta charset=3D"utf-8"></head><body style=3D"font-family:Helve=
+tica,Arial,sans-serif">
+<h3 style=3D"color:#CB333B;margin:0 0 8px">Production | Error in Waypoint.I=
+ntegrations.Ups</h3>
+<table style=3D"font-size:13px">
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Environment</td><td>=
+Production</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Server</td><td>WPA-I=
+NT01</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Time</td><td>10/19/2=
+026 9:00:37 AM</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Release</td><td>2.3.=
+0+fe2c9e4</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">CorrelationId</td><t=
+d>7383f5ed-92ff-4ec1-8e0f-e7afb3a5d2cb</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Account</td><td>2833=
+7 Turkey Ridge Growers Co-op</td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Batch</td><td>18162<=
+/td></tr>
+<tr><td style=3D"color:#475F6F;padding:2px 12px 2px 0">Shipment</td><td>1Z8=
+GBRU80334837871</td></tr>
+</table>
+<pre style=3D"font-size:12px;background:#F7F7F7;padding:8px">System.Net.Htt=
+p.HttpRequestException: Response status code does not indicate success: 429=
+ (Too Many Requests).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Waypoint.Integrations.Ups.UpsShippingClient.CreateLabelAsync(LabelReq=
+uest request, CancellationToken ct) in C:\build\ups\src\Waypoint.Integratio=
+ns.Ups\UpsShippingClient.cs:line 141
+   at Waypoint.Integrations.Ups.LabelBatchService.ProcessBatchAsync(Int32 b=
+atchId, CancellationToken ct) in C:\build\ups\src\Waypoint.Integrations.Ups=
+\LabelBatchService.cs:line 63
+   at Waypoint.Integrations.Ups.Jobs.LabelQueueWorker.ExecuteAsync(Cancella=
+tionToken stoppingToken) in C:\build\ups\src\Waypoint.Integrations.Ups\Jobs=
+\LabelQueueWorker.cs:line 38</pre>
+<p style=3D"color:#808080;font-size:11px">Sent automatically by WPA ErrorMa=
+iler 3.2.</p>
+</body></html>
+
+--=_GW68697BD5DF6DC9A7--

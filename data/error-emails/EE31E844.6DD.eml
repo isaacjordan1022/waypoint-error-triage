@@ -1,0 +1,49 @@
+Received: from WPA-WEB01.wpacorp.local ([10.20.4.218])
+ by gwia.wpacorp.local with ESMTP id 14608467773C; Fri, 06 Nov 2026 17:49:44 -0600
+Message-ID: <9A8BD3B10200A39C00073EFD@gwia.wpacorp.example>
+Date: Fri, 06 Nov 2026 17:49:42 -0600 (CST)
+From: "WPA ErrorMailer" <errormailer@wpacorp.example>
+To: "Web Dev Errors" <webdev-errors@wpacorp.example>
+Subject: Production | Error: NullReferenceException in Waypoint.Portal
+X-Mailer: GroupWise Internet Agent 18.5.0
+X-Wpa-Host: WPA-WEB01
+X-Wpa-Environment: Production
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+An unhandled exception was logged by Waypoint.Portal.
+
+Environment   : Production
+Server        : WPA-WEB01
+Time          : 11/6/2026 5:49:42 PM
+Release       : 4.12.1+75aa65f
+Circuit       : _QwJPokDA8lQHLAepSqL9g
+RequestId     : 0HN4EROICRJDR:00000017
+CorrelationId : 15838511-31e8-41d4-b17e-d913ad90b1e6
+User          : kathryn.tolliver@mail.example
+Account       : 12898 Kenneth Prewitt (homeowner)
+Page          : /invoices/pay
+Invoice       : INV-2026-043977
+PO Number     : (none)
+
+Exception:
+System.NullReferenceException: Object reference not set to an instance of a=
+n object.
+   at Waypoint.Portal.Services.InvoiceService.<>c__DisplayClass15_0.<ApplyP=
+aymentAsync>b__0(InvoiceLine line) in D:\a\1\s\src\Waypoint.Portal\Services=
+\InvoiceService.cs:line 219
+   at System.Linq.Enumerable.Sum[TSource](IEnumerable`1 source, Func`2 sele=
+ctor)
+   at Waypoint.Portal.Services.InvoiceService.ApplyPaymentAsync(PaymentRequ=
+est request, CancellationToken ct) in D:\a\1\s\src\Waypoint.Portal\Services=
+\InvoiceService.cs:line 211
+   at Waypoint.Portal.Components.Pages.Invoices.Pay.SubmitPaymentAsync() in=
+ D:\a\1\s\src\Waypoint.Portal\Components\Pages\Invoices\Pay.razor:line 91
+   at Microsoft.AspNetCore.Components.ComponentBase.CallStateHasChangedOnAs=
+yncCompletion(Task task)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTa=
+sk(Task taskToHandle, ComponentState owningComponentState)
+
+--=20
+Sent automatically by WPA ErrorMailer 3.2. Do not reply to this message.

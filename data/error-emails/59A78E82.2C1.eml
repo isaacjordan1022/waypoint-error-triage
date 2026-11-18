@@ -1,0 +1,46 @@
+Received: from wpa-mobile-api-b21e8.wpacorp.local ([10.20.4.131])
+ by gwia.wpacorp.local with ESMTP id 4D551D596576; Thu, 22 Oct 2026 13:11:48 -0500
+Message-ID: <EBE16D4C02007FE5000E221E@gwia.wpacorp.example>
+Date: Thu, 22 Oct 2026 18:11:46 +0000
+From: "WPA ErrorMailer" <errormailer@wpacorp.example>
+To: "Web Dev Errors" <webdev-errors@wpacorp.example>
+Subject: Production | Error: NullReferenceException in Waypoint.Mobile.Api
+X-Mailer: GroupWise Internet Agent 18.5.0
+X-Wpa-Host: wpa-mobile-api-b21e8
+X-Wpa-Environment: Production
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+An unhandled exception was logged by Waypoint.Mobile.Api.
+
+Environment   : Production
+Server        : wpa-mobile-api-b21e8
+Time          : 2026-10-22T18:11:46.052Z
+Release       : 2.7.0+f202086
+TraceId       : 00-eb9fd3331ffc9eb9bdae4e45c69a8060-8cbd0dc5d264df1e-00
+CorrelationId : 74ca8521-e3ef-44b7-b0d2-30e3e2163ec3
+User          : ccarver@crenshawbrothersagllc.example
+Account       : 10380 Crenshaw Brothers Ag, LLC
+Request       : GET /api/v2/reports/26-295-7925
+
+Exception:
+System.NullReferenceException: Object reference not set to an instance of a=
+n object.
+   at Waypoint.Mobile.Api.Mapping.ResultsMapper.MapTissue(TissueResult resu=
+lt) in /src/Waypoint.Mobile.Api/Mapping/ResultsMapper.cs:line 57
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at Waypoint.Mobile.Api.Controllers.ResultsController.GetReportAsync(Stri=
+ng reportNumber, CancellationToken ct) in /src/Waypoint.Mobile.Api/Controll=
+ers/ResultsController.cs:line 41
+   at lambda_method163(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Awaitabl=
+eObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTyp=
+eMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] =
+arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<Invo=
+keActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueT=
+ask`1 actionResultValueTask)
+
+--=20
+Sent automatically by WPA ErrorMailer 3.2. Do not reply to this message.
